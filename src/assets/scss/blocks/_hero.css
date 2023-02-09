@@ -1,0 +1,151 @@
+.hero {
+  background: linear-gradient(210.19deg, #4C0BD5 1.63%, #111ABF 101.24%);
+  overflow: hidden;
+  position: relative;
+  padding-top: 54px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero_color {
+  z-index: 0;
+}
+
+.hero_color:first-child {
+  position: absolute;
+  top: -350px;
+  right: -850px;
+  width: 1107px;
+  height: 1107px;
+  background: linear-gradient(202.32deg, #FFFFFF 14.55%, rgba(255, 255, 255, 0) 90.62%);
+  opacity: 0.2;
+  transform: rotate(160.61deg);
+  border-radius: 50%;
+}
+
+.hero_color:nth-child(2) {
+  position: absolute;
+  right: -750px;
+  top: -377px;
+  width: 1364.96px;
+  height: 1364.96px;
+  background: linear-gradient(202.32deg, #FFFFFF 14.55%, rgba(255, 255, 255, 0) 90.62%);
+  opacity: 0.2;
+  transform: rotate(174.92deg);
+  border-radius: 50%;
+}
+
+.hero_color:nth-child(3) {
+  position: absolute;
+  right: -700px;
+  top: -200px;
+  width: 1507.3px;
+  height: 1507.3px;
+  background: linear-gradient(202.32deg, #FFFFFF 14.55%, rgba(255, 255, 255, 0) 90.62%);
+  opacity: 0.2;
+  transform: rotate(160.61deg);
+  border-radius: 50%;
+}
+
+.hero_left {
+  width: 100%;
+  max-width: 796px;
+  margin-top: 38px;
+}
+
+.hero_left-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 54px;
+  color: #FFFFFF;
+}
+
+.hero_left-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin-top: 16px;
+  margin-bottom: 93px;
+  width: 100%;
+  max-width: 630px;
+}
+
+.hero_right {
+  background-color: #FFFFFF;
+  z-index: 10;
+  padding: 41px 40px 49px 40px;
+  width: 100%;
+  max-width: 325px;
+}
+
+.hero_right-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #171A4A;
+}
+
+.hero_right-tel {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #171A4A;
+  margin-top: 21px;
+  margin-bottom: 2px;
+}
+
+.hero_right-gmail {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #3B42C5;
+}
+
+.hero_right-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #171A4A;
+  margin-top: 41px;
+  margin-bottom: 11px;
+}
+
+.hero_right-input {
+  display: inline-block;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EBECF9;
+  border-radius: 3px;
+  padding: 14px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #171A4A;
+  margin-bottom: 46px;
+}
+
+.hero-safety {
+  display: flex;
+  flex-wrap: wrap;
+}
