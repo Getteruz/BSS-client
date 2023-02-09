@@ -131,6 +131,12 @@ main {
   padding: 0 20px;
 }
 
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 100;
+}
 .header .container_header {
   width: 100%;
   padding-top: 7px;
@@ -186,7 +192,7 @@ main {
   background: linear-gradient(210.19deg, #4C0BD5 1.63%, #111ABF 101.24%);
   overflow: hidden;
   position: relative;
-  padding-top: 54px;
+  padding-top: 134px;
 }
 .hero .container {
   display: flex;
@@ -318,6 +324,13 @@ main {
 .hero-safety {
   display: flex;
   flex-wrap: wrap;
+}
+
+.hero-safety2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -154px;
+  margin-bottom: 98px;
 }
 
 .safety {
@@ -622,6 +635,7 @@ main {
   margin-left: 5px;
   background: #FFFFFF;
   border: 1px solid rgba(23, 26, 74, 0.1);
+  margin-bottom: 5px;
 }
 .NewsBox-top {
   padding: 49px 18px 22px 39px;
@@ -724,7 +738,7 @@ main {
 
 .serviceHero {
   background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
-  padding-top: 68px;
+  padding-top: 138px;
   padding-bottom: 212px;
 }
 .serviceHero-ltitle {
@@ -753,6 +767,260 @@ main {
   font-size: 17px;
   line-height: 23px;
   color: #FFFFFF;
+}
+
+.AboutUs {
+  padding-bottom: 74px;
+}
+.AboutUs-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 28px;
+  color: #171A4A;
+}
+.AboutUs-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 69px;
+}
+.AboutUs-wrap p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #171A4A;
+}
+.AboutUs-wrap p:nth-child(1) {
+  width: 100%;
+  max-width: 588px;
+  margin-right: 24px;
+}
+.AboutUs_form-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #171A4A;
+  margin-bottom: 15px;
+}
+.AboutUs_form-wrap {
+  background: #FFFFFF;
+  border: 1px solid #EBECF9;
+  border-radius: 3px;
+  padding: 17px 31px 30px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 74px;
+}
+.AboutUs_form-wrap div {
+  display: flex;
+  align-items: center;
+}
+.AboutUs_form-wrap label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #171A4A;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.AboutUs_form-wrap label input {
+  margin-top: 5px;
+  padding: 14px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #171A4A;
+  background: #FFFFFF;
+  border: 1px solid #EBECF9;
+  border-radius: 3px;
+}
+
+.ObjectsHero {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+  padding-top: 156px;
+  padding-bottom: 74px;
+}
+.ObjectsHero-ltitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.ObjectsHero-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+.ObjectsHero-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-top: 15px;
+  margin-bottom: 69px;
+  width: 100%;
+  max-width: 246px;
+}
+.ObjectsHero-tbn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.ObjectsHero-tbn::before {
+  content: "";
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  background-image: url("./assets/images/Group 48097124.svg");
+}
+
+.object_cardtop {
+  margin-top: -302px;
+}
+.object_cardtop .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.object_card {
+  margin-bottom: 81px;
+}
+.object_card .container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.Newshero {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+  padding-bottom: 98px;
+  padding-top: 156px;
+}
+.Newshero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Newshero_left {
+  width: 100%;
+  max-width: 714px;
+}
+.Newshero_left-data {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.Newshero_left-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-top: 4px;
+  margin-bottom: 42px;
+}
+.Newshero_left-btn {
+  display: flex;
+  align-items: center;
+}
+.Newshero_left-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+.Newshero_left-text:nth-child(1) {
+  margin-right: 29px;
+}
+.Newshero_left-text:nth-child(1)::before {
+  content: "";
+  margin-right: 9px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-image: url("./assets/images/Iconsshar.svg");
+  background-position: center;
+  background-size: contain;
+}
+.Newshero_left-text:nth-child(2)::before {
+  content: "";
+  margin-right: 9px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("./assets/images/Iconsey.svg");
+  background-position: center;
+  background-size: contain;
+}
+.Newshero_right {
+  width: 100%;
+  max-width: 246px;
+}
+.Newshero_right-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+
+.newsText {
+  margin-top: -70px;
+  margin-bottom: 96px;
+}
+.newsText img {
+  margin-bottom: 47px;
+}
+.newsText-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.newsText-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #121212;
+  width: 100%;
+  max-width: 588px;
 }
 
 .Footer {
