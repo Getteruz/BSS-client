@@ -1,5 +1,6 @@
 import img from "../../assets/images/Rectangle111001494.png"
 
+
 export default function NewsText() {
     return (
         <div className="newsText">
@@ -14,9 +15,19 @@ export default function NewsText() {
                     </p>
                     <p className="newsText-text">
                         Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                        </p>
+                    </p>
+                </div>
+
+                <div className="newsText-tags">
+                    <h3 className="newsText-tags-title">Новости</h3>
+                    <h2 className="newsText-tags-title2">Теги по тематике</h2>
+                    <div className="newsText-tags-div">
+                        <p>#Uzbekistan</p>
+                        <p>#Safety</p>
+                        <p>#Безопасность</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

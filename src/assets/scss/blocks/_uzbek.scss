@@ -3,12 +3,37 @@
     background: linear-gradient(232.21deg, #700BD5 21.12%, #111ABF 98.35%);
     overflow: hidden;
     margin-bottom: 143px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: #FFFFFF;
+    }
+
+    &-right {
+        width: 100%;
+        max-width: 506px;
+    }
+
+    &-imgwrap {
+        width: 100%;
+        max-width: 750px;
+        position: relative;
+    }
+
+    &-imgrount {
+        position: absolute;
+        top: 290px;
+        left: 410px;
+    }
+
+    &-imgrount2 {
+        position: absolute;
+        top: 260px;
+        left: 310px;
     }
 
     &-backcoler {

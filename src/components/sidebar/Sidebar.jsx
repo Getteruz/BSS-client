@@ -14,3 +14,4 @@ export default function Sidebar() {
 
   );
 }
+<li className="SiteBar_list-item"> <Link className="SiteBar_list-link" to={routes.NEWS}>Новости</Link></li>

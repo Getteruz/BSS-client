@@ -105,6 +105,14 @@ main {
   border-radius: 2px;
   border: none;
 }
+.btn:hover {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
+  color: #ffffff;
+  box-shadow: 0px 0px 1px 2px #3B42C5;
+}
+.btn:active {
+  box-shadow: 0px 0px 0px 0px;
+}
 .btn-send {
   background-color: #3B42C5;
   font-family: "Inter";
@@ -116,6 +124,12 @@ main {
   color: #FFFFFF;
   padding: 18px 85px;
   border: none;
+}
+.btn-send:hover {
+  box-shadow: 0px 0px 1px 2px #3B42C5;
+}
+.btn-send:active {
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .container {
@@ -153,13 +167,15 @@ main {
   line-height: 17px;
   color: #171B4A;
   margin-right: 21px;
+  display: flex;
+  align-items: center;
 }
 .header_language::before {
   content: "";
   display: inline-block;
-  width: 8.85px;
-  height: 12.67px;
-  margin-right: 7.65px;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
   background-image: url("./assets/images/languageVector.svg");
 }
 .header_icons img {
@@ -178,6 +194,12 @@ main {
 }
 .SiteBar_list-item {
   margin-right: 30px;
+}
+.SiteBar_list-item:hover {
+  opacity: 0.7;
+}
+.SiteBar_list-item:active {
+  opacity: 1;
 }
 .SiteBar_list-link {
   font-family: "Inter";
@@ -267,6 +289,7 @@ main {
   padding: 41px 40px 49px 40px;
   width: 100%;
   max-width: 325px;
+  border: 1px solid #F1F1F4;
 }
 .hero_right-title {
   font-family: "Inter";
@@ -338,6 +361,29 @@ main {
   width: 300px;
   padding: 35px 32px 28px 30px;
   border: 1px solid rgba(71, 71, 128, 0.12);
+  transition: all 1s ease-out;
+}
+.safety:hover {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
+  background-color: transparent;
+}
+.safety:hover .safety-title {
+  color: #FFFFFF;
+  transition: all 1s;
+}
+.safety:hover .safety-text {
+  color: #FFFFFF;
+  transition: all 1s;
+}
+.safety:hover .safety-img1 {
+  display: none;
+}
+.safety:hover .safety-img2 {
+  display: block;
+  transform: translate(10px, 0);
+}
+.safety .safety-img2 {
+  transition: all 0.3s;
 }
 .safety-Wrap {
   padding-bottom: 115px;
@@ -369,16 +415,6 @@ main {
   padding-bottom: 31px;
 }
 
-#blue {
-  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
-}
-#blue .safety-title {
-  color: #FFFFFF;
-}
-#blue .safety-text {
-  color: #FFFFFF;
-}
-
 .Object {
   padding-top: 91px;
   padding-bottom: 87px;
@@ -391,19 +427,25 @@ main {
 }
 .Object_region-images {
   position: absolute;
-  top: 0;
-  right: 45px;
+  top: 20px;
+  right: 95px;
+  width: 413px;
+  height: 581px;
 }
 .Object_region-images2 {
   position: absolute;
   top: 223px;
   right: 45px;
   opacity: 0.7;
+  width: 335px;
+  height: 441px;
 }
 .Object_region-images3 {
   position: absolute;
   top: 140px;
   right: 65px;
+  width: 377px;
+  height: 495px;
 }
 .Object_region-title {
   font-family: "Inter";
@@ -462,8 +504,8 @@ main {
   background: #171A4A;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 22%;
+  right: 22%;
 }
 .Object_region-text {
   font-family: "Inter";
@@ -526,17 +568,105 @@ main {
   margin-top: 53px;
 }
 
+.ObjectHeros {
+  padding-top: 138px;
+  padding-bottom: 152px;
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+}
+.ObjectHeros-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+  margin-top: 7px;
+  margin-bottom: 9px;
+}
+.ObjectHeros-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.ObjectHeros-object {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.ObjectText {
+  margin-top: -112px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 93px;
+  flex-wrap: wrap;
+}
+.ObjectText-item {
+  background: linear-gradient(14.71deg, #FFFFFF 6.07%, #EEEEF0 72.26%);
+  border-radius: 4px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 690px;
+}
+.ObjectText-item:nth-child(even) {
+  max-width: 486px;
+}
+.ObjectText-top {
+  padding: 28px 41px 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid hsla(237deg, 50%, 28%, 0.2);
+}
+.ObjectText-text2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  color: #23266A;
+  padding: 32px 40px;
+}
+
 .Uzbek {
   position: relative;
   background: linear-gradient(232.21deg, #700BD5 21.12%, #111ABF 98.35%);
   overflow: hidden;
   margin-bottom: 143px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 .Uzbek .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
+}
+.Uzbek-right {
+  width: 100%;
+  max-width: 506px;
+}
+.Uzbek-imgwrap {
+  width: 100%;
+  max-width: 750px;
+  position: relative;
+}
+.Uzbek-imgrount {
+  position: absolute;
+  top: 290px;
+  left: 410px;
+}
+.Uzbek-imgrount2 {
+  position: absolute;
+  top: 260px;
+  left: 310px;
 }
 .Uzbek-backcoler:nth-child(1) {
   position: absolute;
@@ -637,6 +767,13 @@ main {
   border: 1px solid rgba(23, 26, 74, 0.1);
   margin-bottom: 5px;
 }
+.NewsBox-img2 {
+  display: none;
+}
+.NewsBox:hover .NewsBox-img2 {
+  display: block;
+  transform: translate(300px, 0);
+}
 .NewsBox-top {
   padding: 49px 18px 22px 39px;
 }
@@ -661,6 +798,11 @@ main {
 }
 .NewsBox-btnimg {
   text-align: right;
+  height: 22px;
+}
+
+.NewsBox-img2 {
+  transition: all 10s;
 }
 
 .setting {
@@ -832,6 +974,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
+  width: 280px;
 }
 .AboutUs_form-wrap label input {
   margin-top: 5px;
@@ -1022,6 +1165,306 @@ main {
   width: 100%;
   max-width: 588px;
 }
+.newsText-tags {
+  background: #FFFFFF;
+  border: 1px solid rgba(23, 26, 74, 0.2);
+  border-radius: 3px;
+  padding-top: 20px;
+  margin-top: 51px;
+}
+.newsText-tags-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3B42C5;
+  margin-left: 27px;
+}
+.newsText-tags-title2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  color: #171A4A;
+  margin-left: 27px;
+  margin-top: 4px;
+  margin-bottom: 11px;
+}
+.newsText-tags-div {
+  display: flex;
+  align-items: center;
+  padding: 25px 20px 34px 27px;
+  border-top: 1px solid rgba(23, 26, 74, 0.2);
+}
+.newsText-tags-div p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #171A4A;
+  margin-right: 40px;
+}
+
+.AboutUsHero {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+  padding-top: 156px;
+  padding-bottom: 104px;
+}
+.AboutUsHero_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+.AboutUsHero_top-text2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+.AboutUsHero_top-title {
+  width: 100%;
+  max-width: 614px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-top: 11px;
+  margin-bottom: 39px;
+}
+.AboutUsHero_top-bss {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.AboutUsHero-text {
+  width: 100%;
+  max-width: 1080px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.Team-img {
+  text-align: center;
+  margin-bottom: 41px;
+}
+.Team-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: #171A4A;
+}
+.Team_member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 126px;
+  margin-bottom: 24px;
+}
+.Team_member-item {
+  width: 100%;
+  max-width: 253px;
+  margin-bottom: 80px;
+}
+.Team_member-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  width: 100%;
+  color: #171A4A;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+.Team_member-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3B42C5;
+}
+.Team_services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.Team_services-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #171A4A;
+  margin-top: 80px;
+  margin-bottom: 51px;
+}
+.Team_services-item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  color: #3B42C5;
+  width: 100%;
+  max-width: 280px;
+  margin-right: 10px;
+  margin-bottom: 33px;
+}
+
+.ContactsHero {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+  padding-bottom: 61px;
+  padding-top: 156px;
+}
+.ContactsHero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ContactsHero_left-contact {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.ContactsHero_left-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.ContactsHero_left-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 336px;
+}
+.ContactsHero_bottom {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 43px;
+}
+.ContactsHero_bottom div {
+  margin-right: 70px;
+}
+.ContactsHero_bottom-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.ContactsHero_bottom-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 215px;
+}
+
+.ContactsHero-map {
+  margin-top: 34px;
+}
+.ContactsHero-map > div > .ymaps-2-1-79-map:nth-child(2) {
+  display: none !important;
+}
+
+.Helphero {
+  padding-top: 156px;
+  padding-bottom: 84px;
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+}
+.Helphero-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.Helphero-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-top: 11px;
+  width: 100%;
+  max-width: 714px;
+}
+
+.Help_Question {
+  margin-top: 46px;
+}
+.Help_Question .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.Help_Question-left {
+  width: 100%;
+  max-width: 792px;
+}
+.Help_Question-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #171B4A;
+}
+.Help_Question-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: #171B4A;
+  margin-top: 24px;
+  padding: 28px 131px 52px 35px;
+  background: hsla(235deg, 53%, 19%, 0.06);
+}
+.Help_Question-item {
+  border-bottom: 1px solid hsla(235deg, 53%, 19%, 0.1);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
 
 .Footer {
   padding-top: 64px;
@@ -1033,6 +1476,15 @@ main {
   border-radius: 100px;
   padding: 15px 22px;
   margin-bottom: 25px;
+}
+.Footer-btn:hover {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
+  color: white;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 1px 2px #3B42C5;
+}
+.Footer-btn:active {
+  box-shadow: 0px 0px 0px 0px;
 }
 .Footer_center {
   display: flex;
@@ -1094,6 +1546,18 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.Footer_bottom-link {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+.Footer_bottom-link:hover {
+  opacity: 0.5;
 }
 .Footer_bottom-left {
   display: flex;

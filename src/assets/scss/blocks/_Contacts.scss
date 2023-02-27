@@ -1,0 +1,90 @@
+.ContactsHero {
+    background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+    padding-bottom: 61px;
+    padding-top: 156px;
+
+
+
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_left {
+        &-contact {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+
+        }
+
+        &-title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 34px;
+            color: #FFFFFF;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        &-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            width: 100%;
+            max-width: 336px;
+        }
+    }
+
+    &_bottom {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 43px;
+
+        div {
+            margin-right: 70px;
+        }
+
+        &-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin-bottom: 11px;
+        }
+
+        &-title {
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: #FFFFFF;
+            width: 100%;
+            max-width: 215px;
+        }
+    }
+}
+
+.ContactsHero-map {
+    margin-top: 34px;
+
+    &>div>.ymaps-2-1-79-map {
+
+        &:nth-child(2) {
+            display: none !important;
+        }
+    }
+}

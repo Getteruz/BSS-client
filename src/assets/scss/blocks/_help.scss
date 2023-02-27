@@ -1,0 +1,76 @@
+.Helphero {
+    padding-top: 156px;
+    padding-bottom: 84px;
+    background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+
+    &-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+
+    }
+
+    &-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+        margin-top: 11px;
+        width: 100%;
+        max-width: 714px;
+    }
+
+
+}
+
+.Help {
+    &_Question {
+        margin-top: 46px;
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &-left {
+            width: 100%;
+            max-width: 792px;
+        }
+
+        &-title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #171B4A;
+        }
+
+        &-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 22px;
+            color: #171B4A;
+            margin-top: 24px;
+            padding: 28px 131px 52px 35px;
+
+            background: hsl(235, 53%, 19%, 0.06);
+
+        }
+
+        &-item {
+
+            border-bottom: 1px solid hsl(235, 53%, 19%, 0.1);
+            padding-bottom: 24px;
+            margin-bottom: 30px;
+        }
+    }
+}

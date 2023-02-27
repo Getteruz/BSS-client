@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Safety from "../safety/safety";
 
 export default function Hero() {
+    const [input, setInput] = useState<any>('')
     return (
         <div className="hero">
             <div className="container">
@@ -12,8 +14,8 @@ export default function Hero() {
                     </div>
 
                     <div className="hero-safety">
-                        <Safety color="white" />
-                        <Safety color="blue" />
+                        <Safety />
+                        <Safety />
                     </div>
                 </div>
                 <div className="hero_right">
@@ -21,7 +23,13 @@ export default function Hero() {
                     <p className="hero_right-tel">+998 90 100-00-00</p>
                     <p className="hero_right-gmail">info@gmail.com</p>
                     <p className="hero_right-text">Оставить свой номер телефона для обратного звонка?</p>
-                    <input className="hero_right-input" type="text" placeholder="+998" />
+                    <input className="hero_right-input" type="text" placeholder="+998" value={input} onChange={e => {
+                        if (e.target.value.length == 1) {
+                            setInput("+998" + e.target.value)
+                        } else {
+                            setInput(e.target.value)
+                        }
+                    }} />
                     <button className="btn-send">Отправить</button>
                 </div>
             </div>

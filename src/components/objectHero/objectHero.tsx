@@ -9,7 +9,6 @@ export default function ObjectsHero() {
                     <p className="ObjectsHero-tbn">Все новости</p>
                 </div>
             </div>
-
         </>
     )
 }

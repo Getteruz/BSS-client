@@ -123,4 +123,55 @@
         width: 100%;
         max-width: 588px;
     }
+
+    &-tags {
+        background: #FFFFFF;
+        border: 1px solid rgba(23, 26, 74, 0.2);
+        border-radius: 3px;
+
+        padding-top: 20px;
+
+        margin-top: 51px;
+
+        &-title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #3B42C5;
+            margin-left: 27px;
+        }
+
+        &-title2 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 34px;
+            color: #171A4A;
+            margin-left: 27px;
+            margin-top: 4px;
+            margin-bottom: 11px;
+        }
+
+        &-div {
+            display: flex;
+            align-items: center;
+            padding: 25px 20px 34px 27px;
+
+            border-top: 1px solid rgba(23, 26, 74, 0.2);
+
+            p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27px;
+                color: #171A4A;
+                margin-right: 40px;
+            }
+
+        }
+    }
 }

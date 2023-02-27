@@ -2,6 +2,8 @@ import linkedin from "../../assets/images/linkedin1.svg"
 import twitter from "../../assets/images/twitter1.svg"
 import facebook from "../../assets/images/facebook1.svg"
 import instagram from "../../assets/images/instagram1.svg"
+import { Link } from "react-router-dom"
+import routes from "../../shared/constants/routes"
 
 export default function Footer() {
     return (
@@ -12,10 +14,10 @@ export default function Footer() {
                     <div className="Footer_center-left">
                         <p>© 2023 Все права защищены.</p>
                         <ul>
-                            <li>О компании</li>
-                            <li>Услуги</li>
-                            <li>Объекты</li>
-                            <li>Новости</li>
+                            <li><Link to={routes.HOME}>О компании</Link></li>
+                            <li> <Link to={routes.SERVICES}>Услуги</Link></li>
+                            <li ><Link to={routes.OBJECT}>Объекты</Link></li>
+                            <li><Link to={routes.NEWS}>Новости</Link></li>
                         </ul>
                     </div>
                     <div className="Footer_center-right">
@@ -33,17 +35,15 @@ export default function Footer() {
                     <div className="Footer_bottom-left">
                         <p>Copyright: 2023</p>
                         <ul>
-                            <li>О нас</li>
-                            <li>Помощь</li>
+                            <li><Link className="Footer_bottom-link" to={routes.ABOUTUS}>О нас</Link></li>
+                            <li><Link className="Footer_bottom-link" to={routes.HELP}>Помощь</Link> </li>
                         </ul>
                     </div>
                     <div className="Footer_bottom-right">
-
                         <p>Designed by:</p> <span>Getter</span>
-
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

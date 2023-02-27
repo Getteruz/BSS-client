@@ -3,8 +3,9 @@ import { Header } from "../../components/header/header"
 import Newshero from "../../components/newsHero/newsHore"
 
 
-import Partners from "../../components/partners/partners"
+
 import NewsText from "../../components/newsText/newsText"
+import ObjectsNews from "../../components/objectNews/ObjectNews"
 
 export default function NewsPage() {
     return (
@@ -12,7 +13,7 @@ export default function NewsPage() {
             <Header />
             <Newshero />
             <NewsText />
-            <Partners />
+            <ObjectsNews />
             <Footer />
         </>
     )
