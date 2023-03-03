@@ -8,6 +8,7 @@
         padding-bottom: 114px;
         position: relative;
 
+
         &-images {
             position: absolute;
             top: 20px;
@@ -93,6 +94,14 @@
             border-radius: 50%;
             position: relative;
 
+            &:nth-child(2) {
+                margin-left: 5px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 5px;
+            }
+
             &::after {
                 content: "";
                 display: inline-block;
@@ -116,6 +125,8 @@
             width: 100%;
             max-width: 547px;
             padding-bottom: 39px;
+            height: 150px;
+            overflow: hidden;
         }
 
         &-iconright {

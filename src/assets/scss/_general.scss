@@ -69,6 +69,7 @@ main {
     background: rgba(59, 66, 197, 0.1);
     border-radius: 2px;
     border: none;
+    cursor: pointer;
 
     &:hover {
         background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
@@ -81,6 +82,7 @@ main {
     }
 
     &-send {
+        cursor: pointer;
         background-color: #3B42C5;
         font-family: 'Inter';
         font-style: normal;

@@ -22,18 +22,25 @@
         width: 100%;
         max-width: 750px;
         position: relative;
+
     }
+
 
     &-imgrount {
         position: absolute;
         top: 290px;
-        left: 410px;
+        left: 405px;
+        cursor: pointer;
+        animation: test 1s ease-in infinite;
     }
+
 
     &-imgrount2 {
         position: absolute;
         top: 260px;
         left: 310px;
+        cursor: pointer;
+        animation: test 1s ease-in infinite;
     }
 
     &-backcoler {
@@ -106,5 +113,19 @@
         line-height: 16px;
         color: #FFFFFF;
         opacity: 0.8;
+    }
+}
+
+@keyframes test {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

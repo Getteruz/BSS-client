@@ -4,7 +4,10 @@ import img from "../../assets/images/Rectangleds.png"
 import Settings from "../../assets/images/Settings.png"
 import { Link } from "react-router-dom"
 import routes from "../../shared/constants/routes"
+import TelNumber from "../telnumber/TelNumber"
+import { useRef } from "react"
 export const News = () => {
+    const x = useRef<any>()
     return (
         <div className="News">
             <div className="container">
@@ -25,8 +28,15 @@ export const News = () => {
                         </div>
                         <p className="setting-text">Если вы хотите проверить безопасность вашего объекта и ваших сотрудников, отправьте заявку!</p>
                     </div>
-                    <button className="btn">Оставить заявку</button>
+                    <button className="btn" onClick={() => x.current.style.display = "block"} >Оставить заявку</button>
                 </div>
+            </div>
+            <div ref={x} className="wrap" onClick={(e: any) => {
+                if (e.target == x.current) {
+                    e.target.style.display = "none"
+                }
+            }}>
+                <TelNumber />
             </div>
         </div>
     )

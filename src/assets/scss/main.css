@@ -104,6 +104,7 @@ main {
   background: rgba(59, 66, 197, 0.1);
   border-radius: 2px;
   border: none;
+  cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
@@ -114,6 +115,7 @@ main {
   box-shadow: 0px 0px 0px 0px;
 }
 .btn-send {
+  cursor: pointer;
   background-color: #3B42C5;
   font-family: "Inter";
   font-style: normal;
@@ -151,6 +153,23 @@ main {
   background-color: #FFFFFF;
   z-index: 100;
 }
+.header .wrapLaga {
+  position: absolute;
+  top: 45px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 14px 24px rgba(20, 32, 74, 0.25);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 184px;
+  padding: 20px;
+  padding-bottom: 8px;
+}
+.header .wrapLaga li {
+  margin-bottom: 12px;
+}
 .header .container_header {
   width: 100%;
   padding-top: 7px;
@@ -169,6 +188,7 @@ main {
   margin-right: 21px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .header_language::before {
   content: "";
@@ -178,7 +198,17 @@ main {
   margin-right: 5px;
   background-image: url("./assets/images/languageVector.svg");
 }
+.header_language:hover .wrapLaga {
+  display: flex;
+}
+.header_language:hover .wrapLaga:hover {
+  display: flex;
+}
+.header_language:hover .wrapLaga li:hover {
+  color: #3B42C5;
+}
 .header_icons img {
+  cursor: pointer;
   margin-left: 25px;
 }
 .header_icons img:first-child {
@@ -208,6 +238,19 @@ main {
   font-size: 14px;
   line-height: 17px;
   color: #171B4A;
+}
+
+.wrap {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 200px;
+  padding-left: 35%;
 }
 
 .hero {
@@ -361,19 +404,15 @@ main {
   width: 300px;
   padding: 35px 32px 28px 30px;
   border: 1px solid rgba(71, 71, 128, 0.12);
-  transition: all 1s ease-out;
 }
 .safety:hover {
   background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
-  background-color: transparent;
 }
 .safety:hover .safety-title {
   color: #FFFFFF;
-  transition: all 1s;
 }
 .safety:hover .safety-text {
   color: #FFFFFF;
-  transition: all 1s;
 }
 .safety:hover .safety-img1 {
   display: none;
@@ -496,6 +535,12 @@ main {
   border-radius: 50%;
   position: relative;
 }
+.Object_region-btnClick:nth-child(2) {
+  margin-left: 5px;
+}
+.Object_region-btnClick:nth-child(3) {
+  margin-left: 5px;
+}
 .Object_region-btnClick::after {
   content: "";
   display: inline-block;
@@ -517,6 +562,8 @@ main {
   width: 100%;
   max-width: 547px;
   padding-bottom: 39px;
+  height: 150px;
+  overflow: hidden;
 }
 .Object_region-iconright {
   margin-right: 20px;
@@ -661,12 +708,18 @@ main {
 .Uzbek-imgrount {
   position: absolute;
   top: 290px;
-  left: 410px;
+  left: 405px;
+  cursor: pointer;
+  -webkit-animation: test 1s ease-in infinite;
+          animation: test 1s ease-in infinite;
 }
 .Uzbek-imgrount2 {
   position: absolute;
   top: 260px;
   left: 310px;
+  cursor: pointer;
+  -webkit-animation: test 1s ease-in infinite;
+          animation: test 1s ease-in infinite;
 }
 .Uzbek-backcoler:nth-child(1) {
   position: absolute;
@@ -731,6 +784,29 @@ main {
   opacity: 0.8;
 }
 
+@-webkit-keyframes test {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes test {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .News {
   padding-bottom: 52px;
 }
@@ -848,12 +924,12 @@ main {
   padding-bottom: 93px;
 }
 .Partners-Wrap {
-  background: #FFFFFF;
   display: flex;
   margin-top: 19px;
 }
 
 .PartnersBox {
+  background: #FFFFFF;
   width: 100%;
   max-width: 240px;
   padding: 54px 50px;
