@@ -63,47 +63,51 @@ export default function Objects() {
                         <img className="Object_region-images3" src={data[number2]?.img} width={378} height={441} alt="" />
                         <img className="Object_region-images" src={data[number]?.img} width={413} height={495} alt="" />
                         <div className="Object_region-icons">
+                            <div>
 
-                            <img className="Object_region-iconright" src={iconr} alt="icon" onClick={(e) => {
-                                if (number > 0) {
-                                    setNunber(number - 1)
-                                }
-                                if (number == 0) {
-                                    setNunber(data.length - 1)
-                                }
-                                if (number2 > 0) {
-                                    setNunber2(number2 - 1)
-                                }
-                                if (number2 == 0) {
-                                    setNunber2(data.length - 1)
-                                }
-                                if (number3 > 0) {
-                                    setNunber3(number3 - 1)
-                                }
-                                if (number3 == 0) {
-                                    setNunber3(data.length - 1)
-                                }
-                            }} />
-                            <img className="Object_region-iconleft" src={icon} alt="icon" onClick={(e) => {
-                                if (number !== (data.length - 1)) {
-                                    setNunber(number + 1)
-                                }
-                                if (number == (data.length - 1)) {
-                                    setNunber(0)
-                                }
-                                if (number2 !== (data.length - 1)) {
-                                    setNunber2(number2 + 1)
-                                }
-                                if (number2 == (data.length - 1)) {
-                                    setNunber2(0)
-                                }
-                                if (number3 !== (data.length - 1)) {
-                                    setNunber3(number3 + 1)
-                                }
-                                if (number3 == (data.length - 1)) {
-                                    setNunber3(0)
-                                }
-                            }} />
+                                <img className="Object_region-iconright" src={iconr} alt="icon" onClick={(e) => {
+                                    if (number > 0) {
+                                        setNunber(number - 1)
+                                    }
+                                    if (number == 0) {
+                                        setNunber(data.length - 1)
+                                    }
+                                    if (number2 > 0) {
+                                        setNunber2(number2 - 1)
+                                    }
+                                    if (number2 == 0) {
+                                        setNunber2(data.length - 1)
+                                    }
+                                    if (number3 > 0) {
+                                        setNunber3(number3 - 1)
+                                    }
+                                    if (number3 == 0) {
+                                        setNunber3(data.length - 1)
+                                    }
+                                }} />
+                            </div>
+                            <div>
+                                <img className="Object_region-iconleft" src={icon} alt="icon" onClick={(e) => {
+                                    if (number !== (data.length - 1)) {
+                                        setNunber(number + 1)
+                                    }
+                                    if (number == (data.length - 1)) {
+                                        setNunber(0)
+                                    }
+                                    if (number2 !== (data.length - 1)) {
+                                        setNunber2(number2 + 1)
+                                    }
+                                    if (number2 == (data.length - 1)) {
+                                        setNunber2(0)
+                                    }
+                                    if (number3 !== (data.length - 1)) {
+                                        setNunber3(number3 + 1)
+                                    }
+                                    if (number3 == (data.length - 1)) {
+                                        setNunber3(0)
+                                    }
+                                }} />
+                            </div>
                         </div>
 
                     </div>

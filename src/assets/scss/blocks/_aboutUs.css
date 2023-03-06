@@ -1,0 +1,142 @@
+.AboutUsHero {
+  background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
+  padding-top: 156px;
+  padding-bottom: 104px;
+}
+
+.AboutUsHero_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.AboutUsHero_top-text2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.AboutUsHero_top-title {
+  width: 100%;
+  max-width: 614px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-top: 11px;
+  margin-bottom: 39px;
+}
+
+.AboutUsHero_top-bss {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.AboutUsHero-text {
+  width: 100%;
+  max-width: 1080px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.Team-img {
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.Team-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: #171A4A;
+}
+
+.Team_member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 126px;
+  margin-bottom: 24px;
+}
+
+.Team_member-item {
+  width: 100%;
+  max-width: 253px;
+  margin-bottom: 80px;
+}
+
+.Team_member-name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  width: 100%;
+  color: #171A4A;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.Team_member-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3B42C5;
+}
+
+.Team_services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.Team_services-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #171A4A;
+  margin-top: 80px;
+  margin-bottom: 51px;
+}
+
+.Team_services-item {
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  color: #3B42C5;
+  width: 100%;
+  max-width: 280px;
+  margin-right: 10px;
+  margin-bottom: 33px;
+  border-bottom: 3px solid transparent;
+}
+
+.Team_services-item:hover {
+  border-bottom: 3px solid #3B42C5;
+  border-radius: 2px;
+}

@@ -121,9 +121,12 @@
             color: #171A4A;
             margin-top: 80px;
             margin-bottom: 51px;
+
+
         }
 
         &-item {
+            cursor: pointer;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
@@ -134,6 +137,13 @@
             max-width: 280px;
             margin-right: 10px;
             margin-bottom: 33px;
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-bottom: 3px solid #3B42C5;
+                border-radius: 2px;
+            }
+
         }
     }
 }

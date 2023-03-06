@@ -12,20 +12,22 @@ export default function Footer() {
                 <button className="Footer-btn">Связатся с нами</button>
                 <div className="Footer_center">
                     <div className="Footer_center-left">
-                        <p>© 2023 Все права защищены.</p>
+                        <Link className="Footer_center-leftlink" to={routes.HOME}>© 2023 Все права защищены.</Link>
                         <ul>
-                            <li><Link to={routes.HOME}>О компании</Link></li>
-                            <li> <Link to={routes.SERVICES}>Услуги</Link></li>
-                            <li ><Link to={routes.OBJECT}>Объекты</Link></li>
-                            <li><Link to={routes.NEWS}>Новости</Link></li>
+                            <li><Link className="Footer_center-navbar" to={routes.HOME}>О компании</Link></li>
+                            <li> <Link className="Footer_center-navbar" to={routes.SERVICES}>Услуги</Link></li>
+                            <li ><Link className="Footer_center-navbar" to={routes.OBJECT}>Объекты</Link></li>
+                            <li><Link className="Footer_center-navbar" to={routes.NEWS}>Новости</Link></li>
                         </ul>
                     </div>
+
                     <div className="Footer_center-right">
-                        <p>+998 90 000 00 00</p>
-                        <img src={linkedin} alt="linkedin" />
-                        <img src={twitter} alt="" />
-                        <img src={facebook} alt="" />
-                        <img src={instagram} alt="" />
+                        <Link className="Footer_center-right-tel" to={"tel:+998900000000"}>+998 90 000 00 00</Link>
+                        <Link className="Footer_center-right-link" to={routes.HOME}><img src={linkedin} alt="linkedin" /></Link>
+                        <Link className="Footer_center-right-link" to={routes.HOME}><img src={twitter} alt="twitter" /></Link>
+                        <Link className="Footer_center-right-link" to={routes.HOME}><img src={facebook} alt="facebook" /></Link>
+                        <Link className="Footer_center-right-link" to={routes.HOME}><img src={instagram} alt="instagram" /></Link>
+
                     </div>
                 </div>
 
@@ -40,7 +42,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="Footer_bottom-right">
-                        <p>Designed by:</p> <span>Getter</span>
+                        <p>Designed by:</p> <span> <Link className="Footer_bottom-right-link" to={"https://getter.uz/"}>Getter </Link> </span>
                     </div>
                 </div>
             </div>

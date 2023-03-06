@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Litelabout() {
+    const [input, setInput] = useState<any>()
     return (
         <div className='container'>
 
@@ -20,7 +21,14 @@ export default function Litelabout() {
                         </label>
                         <label >
                             Номер телефона
-                            <input type="text" placeholder="+998" />
+                            <input type="text" placeholder="+998" value={input} onChange={e => {
+
+                                if (e.target.value !== "+" && e.target.value.length == 1) {
+                                    setInput("+998" + e.target.value)
+                                } else {
+                                    setInput(e.target.value)
+                                }
+                            }} />
                         </label>
                     </div>
 

@@ -31,6 +31,7 @@
             color: #FFFFFF;
             margin-top: 5px;
             margin-bottom: 15px;
+
         }
 
         &-text {
@@ -65,13 +66,16 @@
         }
 
         &-title {
-
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
             line-height: 24px;
             color: #FFFFFF;
+
+        }
+
+        &-div {
             width: 100%;
             max-width: 215px;
         }

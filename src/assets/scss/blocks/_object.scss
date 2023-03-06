@@ -8,6 +8,21 @@
         padding-bottom: 114px;
         position: relative;
 
+        &-icons {
+            display: flex;
+
+            div {
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.3;
+                }
+
+                &:active {
+                    opacity: 1;
+                }
+            }
+        }
 
         &-images {
             position: absolute;
@@ -240,6 +255,7 @@
         margin-bottom: 24px;
         width: 100%;
         max-width: 690px;
+        cursor: pointer;
 
         &:nth-child(even) {
             max-width: 486px;

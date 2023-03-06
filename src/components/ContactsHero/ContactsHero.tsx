@@ -20,19 +20,20 @@ export default function ContactsHero() {
                         </div>
                     </div>
                     <div className='ContactsHero_bottom'>
-                        <div>
+                        <div className='ContactsHero_bottom-div'>
                             <p className='ContactsHero_bottom-text'>Наш адресс:</p>
-                            <h3 className='ContactsHero_bottom-title'>г.Ташкент, ул. Истиклол
-                                дом 167А, кв 44</h3>
+                            <Link to={"/"} className='ContactsHero_bottom-title'>г.Ташкент, ул. Истиклол
+                                дом 167А, кв 44</Link>
                         </div>
                         <div>
                             <p className='ContactsHero_bottom-text'>Контакты</p>
-                            <h3 className='ContactsHero_bottom-title'>+998 78 100-00-00
-                                +998 90 000-00-00</h3>
+                            <Link to={"tel:9876543210"} className='ContactsHero_bottom-title'>+998 78 100-00-00</Link> <br />
+                            <Link to={"tel:9876543210"} className='ContactsHero_bottom-title'>+998 90 000-00-00</Link>
+
                         </div>
                         <div>
                             <p className='ContactsHero_bottom-text'>E-mail</p>
-                            <h3 className='ContactsHero_bottom-title'>info@gmail.com</h3>
+                            <Link to={"mailto:nfo@gmail.com"} className='ContactsHero_bottom-title'>info@gmail.com</Link>
                         </div>
                     </div>
                 </div>

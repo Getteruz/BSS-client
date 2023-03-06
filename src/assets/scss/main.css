@@ -343,6 +343,7 @@ main {
   color: #171A4A;
 }
 .hero_right-tel {
+  display: inline-block;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -404,6 +405,7 @@ main {
   width: 300px;
   padding: 35px 32px 28px 30px;
   border: 1px solid rgba(71, 71, 128, 0.12);
+  cursor: pointer;
 }
 .safety:hover {
   background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
@@ -463,6 +465,18 @@ main {
   padding-top: 21px;
   padding-bottom: 114px;
   position: relative;
+}
+.Object_region-icons {
+  display: flex;
+}
+.Object_region-icons div {
+  cursor: pointer;
+}
+.Object_region-icons div:hover {
+  opacity: 0.3;
+}
+.Object_region-icons div:active {
+  opacity: 1;
 }
 .Object_region-images {
   position: absolute;
@@ -661,6 +675,7 @@ main {
   margin-bottom: 24px;
   width: 100%;
   max-width: 690px;
+  cursor: pointer;
 }
 .ObjectText-item:nth-child(even) {
   max-width: 486px;
@@ -842,6 +857,7 @@ main {
   background: #FFFFFF;
   border: 1px solid rgba(23, 26, 74, 0.1);
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .NewsBox-img2 {
   display: none;
@@ -1101,6 +1117,8 @@ main {
   max-width: 246px;
 }
 .ObjectsHero-tbn {
+  display: inline-block;
+  cursor: pointer;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -1395,6 +1413,7 @@ main {
   margin-bottom: 51px;
 }
 .Team_services-item {
+  cursor: pointer;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -1405,6 +1424,11 @@ main {
   max-width: 280px;
   margin-right: 10px;
   margin-bottom: 33px;
+  border-bottom: 3px solid transparent;
+}
+.Team_services-item:hover {
+  border-bottom: 3px solid #3B42C5;
+  border-radius: 2px;
 }
 
 .ContactsHero {
@@ -1469,6 +1493,8 @@ main {
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+}
+.ContactsHero_bottom-div {
   width: 100%;
   max-width: 215px;
 }
@@ -1524,6 +1550,7 @@ main {
   font-size: 22px;
   line-height: 27px;
   color: #171B4A;
+  cursor: pointer;
 }
 .Help_Question-text {
   font-family: "Inter";
@@ -1552,6 +1579,7 @@ main {
   border-radius: 100px;
   padding: 15px 22px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .Footer-btn:hover {
   background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
@@ -1567,6 +1595,24 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.Footer_center-navbar {
+  color: #171A4A;
+}
+.Footer_center-navbar:hover {
+  opacity: 0.5;
+}
+.Footer_center-navbar:active {
+  opacity: 1;
+}
+.Footer_center-leftlink {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #171A4A;
+  margin-right: 57px;
 }
 .Footer_center-left {
   display: flex;
@@ -1598,19 +1644,20 @@ main {
   display: flex;
   align-items: center;
 }
-.Footer_center-right p {
+.Footer_center-right-tel {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
   color: #171A4A;
-  padding-right: 40px;
+  margin-right: 41px;
 }
-.Footer_center-right img {
+.Footer_center-right-link {
+  display: inline-block;
   margin-right: 30px;
 }
-.Footer_center-right img:last-child {
+.Footer_center-right-link:last-child {
   margin-right: 0px;
 }
 .Footer_bottom {
@@ -1675,4 +1722,12 @@ main {
   color: #FFFFFF;
   opacity: 0.4;
   margin-right: 8px;
+}
+.Footer_bottom-right-link {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

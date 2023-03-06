@@ -8,6 +8,7 @@
         border-radius: 100px;
         padding: 15px 22px;
         margin-bottom: 25px;
+        cursor: pointer;
 
         &:hover {
             background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
@@ -27,6 +28,28 @@
         justify-content: space-between;
         margin-bottom: 20px;
 
+        &-navbar {
+            color: #171A4A;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            &:active {
+                opacity: 1;
+            }
+        }
+
+        &-leftlink {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #171A4A;
+            margin-right: 57px;
+        }
+
         &-left {
             display: flex;
             align-items: center;
@@ -44,6 +67,8 @@
                 li {
                     margin-right: 37px;
                 }
+
+
             }
 
             p {
@@ -61,17 +86,18 @@
             display: flex;
             align-items: center;
 
-            p {
+            &-tel {
                 font-family: 'Noto Sans';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 18px;
                 color: #171A4A;
-                padding-right: 40px;
+                margin-right: 41px;
             }
 
-            img {
+            &-link {
+                display: inline-block;
                 margin-right: 30px;
 
                 &:last-child {
@@ -154,6 +180,15 @@
                 opacity: 0.4;
                 margin-right: 8px;
 
+            }
+
+            &-link {
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 17px;
+                line-height: 21px;
+                color: #FFFFFF;
             }
 
 

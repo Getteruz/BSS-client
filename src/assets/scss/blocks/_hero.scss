@@ -3,6 +3,7 @@
     overflow: hidden;
     position: relative;
     padding-top: 134px;
+   
 
     .container {
         display: flex;
@@ -99,6 +100,7 @@
         }
 
         &-tel {
+            display: inline-block;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
