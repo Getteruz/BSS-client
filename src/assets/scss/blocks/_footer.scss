@@ -1,6 +1,7 @@
 .Footer {
     padding-top: 64px;
 
+
     &-btn {
         border: none;
         background-color: #FFFFFF;
@@ -26,6 +27,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-bottom: 20px;
 
         &-navbar {
@@ -53,16 +55,28 @@
         &-left {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
+
+            @media only screen and (max-width:976px) {
+                margin-bottom: 20px;
+            }
 
             ul {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 18px;
                 color: #171A4A;
+
+                @media only screen and (max-width:673px) {
+                    margin-top: 20px;
+                }
+
+
 
                 li {
                     margin-right: 37px;
@@ -85,6 +99,7 @@
         &-right {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
 
             &-tel {
                 font-family: 'Noto Sans';
@@ -116,6 +131,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
 
@@ -137,6 +153,7 @@
         &-left {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
 
             p {
                 font-family: 'Noto Sans';
@@ -152,6 +169,7 @@
             ul {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
                 font-family: 'Work Sans';
                 font-style: normal;
                 font-weight: 400;
@@ -169,6 +187,7 @@
         &-right {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
 
             p {
                 font-family: 'Noto Sans';

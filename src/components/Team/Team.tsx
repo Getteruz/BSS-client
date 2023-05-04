@@ -1,40 +1,25 @@
 import React from 'react'
 import img from "../../assets/images/Rectangleds7.png"
 import memebr from "../../assets/images/Ellipse1394.png"
-
-export default function Team() {
+interface Props {
+    data: any;
+}
+export default function Team({ data }: Props) {
     return (
         <div className='Team'>
             <div className='Team-img'>
                 <img src={img} alt="" />
             </div>
             <div className="container">
-                <p className='Team-text'>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p className='Team-text'>{data?.text3}</p>
                 <ul className='Team_member'>
                     <li className='Team_member-item'>
                         <img src={memebr} alt="" width={180} />
-                        <h4 className='Team_member-name'>Abdullo Xolmurodov</h4>
-                        <p className='Team_member-text'>Директор компании</p>
-                    </li>
-                    <li className='Team_member-item'>
-                        <img src={memebr} alt="" width={180} />
-                        <h4 className='Team_member-name'>Abdullo Xolmurodov</h4>
-                        <p className='Team_member-text'>Директор компании</p>
-                    </li>
-                    <li className='Team_member-item'>
-                        <img src={memebr} alt="" width={180} />
-                        <h4 className='Team_member-name'>Abdullo Xolmurodov</h4>
-                        <p className='Team_member-text'>Директор компании</p>
-                    </li>
-                    <li className='Team_member-item'>
-                        <img src={memebr} alt="" width={180} />
-                        <h4 className='Team_member-name'>Abdullo Xolmurodov</h4>
-                        <p className='Team_member-text'>Директор компании</p>
-                    </li>
-                    <li className='Team_member-item'>
-                        <img src={memebr} alt="" width={180} />
-                        <h4 className='Team_member-name'>Abdullo Xolmurodov</h4>
-                        <p className='Team_member-text'>Директор компании</p>
+                        <div>
+                            <h4 className='Team_member-name'>Abdullo Xolmurodov</h4>
+                            <p className='Team_member-text'>Директор компании</p>
+                            <p className='Team_member-dicr'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
                     </li>
                 </ul>
                 <p className='Team-text'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>

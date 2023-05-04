@@ -12,15 +12,15 @@ export const News = () => {
         <div className="News">
             <div className="container">
                 <div className="News_left">
-
                     <Titles span={"Новости"} title={"Последние новости"} text={"Читайте все о наших последних проектах, события и объявлениях компании"} />
-
                     <Link to={routes.NEWS} className="News_left-btn">Все новости</Link>
                 </div>
-                <NewsBox title={"Отчет об устойчивом развитии"} text={"If everything seems under control, youre just not going fast enough."} img={img} />
-                <NewsBox title={"Отчет об устойчивом развитии"} text={"If everything seems under control, youre just not going fast enough."} img={img} />
-            </div>
-            <div>
+                <div className='News_leftdiv'>
+                    <NewsBox title={"Отчет об устойчивом развитии"} text={"If everything seems under control, youre just not going fast enough."} img={img} />
+                    <NewsBox title={"Отчет об устойчивом развитии"} text={"If everything seems under control, youre just not going fast enough."} img={img} />
+                </div>
+            </div >
+            <div className="container">
                 <div className="setting">
                     <div className="setting-div">
                         <div className="setting-img">
@@ -30,7 +30,7 @@ export const News = () => {
                     </div>
                     <button className="btn" onClick={() => x.current.style.display = "block"} >Оставить заявку</button>
                 </div>
-            </div>
+            </div >
             <div ref={x} className="wrap" onClick={(e: any) => {
                 if (e.target == x.current) {
                     e.target.style.display = "none"
@@ -38,6 +38,7 @@ export const News = () => {
             }}>
                 <TelNumber />
             </div>
+
         </div>
     )
 }

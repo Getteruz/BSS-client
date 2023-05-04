@@ -3,6 +3,11 @@
     padding-bottom: 84px;
     background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
 
+    @media only screen and (max-width:550px) {
+        padding-top: 136px;
+        padding-bottom: 64px
+    }
+
     &-text {
         font-family: 'Inter';
         font-style: normal;
@@ -23,6 +28,18 @@
         margin-top: 11px;
         width: 100%;
         max-width: 714px;
+
+        @media only screen and (max-width:700px) {
+            font-weight: 800;
+            font-size: 46px;
+            line-height: 46px;
+        }
+
+        @media only screen and (max-width:550px) {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 36px;
+        }
     }
 
 
@@ -41,6 +58,10 @@
         &-left {
             width: 100%;
             max-width: 792px;
+
+            @media only screen and (max-width:1240px) {
+                max-width: 900px;
+            }
         }
 
         &-title {
@@ -51,6 +72,12 @@
             line-height: 27px;
             color: #171B4A;
             cursor: pointer;
+
+            @media only screen and (max-width:450px) {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+            }
         }
 
         &-text {
@@ -64,6 +91,10 @@
             padding: 28px 131px 52px 35px;
 
             background: hsl(235, 53%, 19%, 0.06);
+
+            @media only screen and (max-width:700px) {
+                padding-right: 30px;
+            }
 
         }
 

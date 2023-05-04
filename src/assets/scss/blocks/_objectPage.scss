@@ -2,6 +2,7 @@
     background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), #D9D9D9;
     padding-top: 156px;
     padding-bottom: 74px;
+    margin-bottom: 10px;
 
     &-ltitle {
         font-family: 'Inter';
@@ -33,6 +34,15 @@
         margin-bottom: 69px;
         width: 100%;
         max-width: 246px;
+
+        @media only screen and (max-width:1170px) {
+            max-width: 446px;
+        }
+
+        @media only screen and (max-width:876px) {
+            max-width: 100%;
+        }
+
     }
 
     &-tbn {
@@ -60,6 +70,7 @@
 
 .object_cardtop {
     margin-top: -302px;
+    margin-bottom: 20px;
 
     .container {
         display: flex;
@@ -70,7 +81,7 @@
 .object_card {
     .container {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 

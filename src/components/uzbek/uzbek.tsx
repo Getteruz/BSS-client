@@ -3,19 +3,14 @@ import Group from "../../assets/images/Group.png"
 import imgGrap from "../../assets/images/Groupround.svg"
 
 
-export const Uzbek = () => {
-    const data = [
-        {
-            country: "UZBEKISTAN",
-            title: "Be undeniably good. No marketing effort or social media buzzword can be a substitute for that.",
-            text: "Media can be a substitute for that"
-        },
-        {
-            country: "UZBEKISTAN 2",
-            title: "Title 2",
-            text: "Media can be a substitute for that 2"
-        }
-    ]
+interface Props {
+
+    object: any,
+
+
+}
+export const Uzbek = ({ object }: Props) => {
+
     const [number, setNumber] = useState<any>(0)
     return (
         <div className="Uzbek">
@@ -27,9 +22,9 @@ export const Uzbek = () => {
                 </div>
 
                 <div className="Uzbek-right">
-                    <h3 className="Uzbek-country">{data[number]?.country}</h3>
-                    <h2 className="Uzbek-title">{data[number]?.title}</h2>
-                    <p className="Uzbek-text">{data[number]?.text}</p>
+                    <h3 className="Uzbek-country">{object[number]?.tag}</h3>
+                    <h2 className="Uzbek-title">{object[number]?.title}</h2>
+                    <p className="Uzbek-text">{object[number]?.text}</p>
                 </div>
                 <div>
                     <div className="Uzbek-backcoler"></div>

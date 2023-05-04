@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useGetWindowWidth } from '../../shared/hooks/useGetWindowWith'
 
 
 const data = [
@@ -37,6 +38,7 @@ const data = [
 export default function Helphero() {
     const [input, setInput] = useState<any>('')
     const [text, setText] = useState<string | boolean>(data[0].id)
+    const widthwindow: any = useGetWindowWidth()
     return (
         <>
             <div className='Helphero'>
@@ -55,23 +57,26 @@ export default function Helphero() {
                             </li>
                         ))}
                     </ul>
-                    <div className="hero_right">
-                        <h3 className="hero_right-title">Контакт для консультации:</h3>
-                        <Link to="tel:9876543210" className="hero_right-tel">+998 90 100-00-00</Link>
-                        <Link to={"mailto:nfo@gmail.com"} className="hero_right-gmail">info@gmail.com</Link>
-                        <p className="hero_right-text">Оставить свой номер телефона для обратного звонка?</p>
-                        <input className="hero_right-input" type="text" placeholder="+998" value={input}
-                            onChange={e => {
+                    {
+                        widthwindow > 1240 ? <div className="hero_right">
+                            <h3 className="hero_right-title">Контакт для консультации:</h3>
+                            <Link to="tel:9876543210" className="hero_right-tel">+998 90 100-00-00</Link>
+                            <Link to={"mailto:nfo@gmail.com"} className="hero_right-gmail">info@gmail.com</Link>
+                            <p className="hero_right-text">Оставить свой номер телефона для обратного звонка?</p>
+                            <input className="hero_right-input" type="text" placeholder="+998" value={input}
+                                onChange={e => {
 
-                                if (e.target.value !== "+" && e.target.value.length == 1) {
-                                    setInput("+998" + e.target.value)
-                                } else {
-                                    setInput(e.target.value)
-                                }
-                            }} />
+                                    if (e.target.value !== "+" && e.target.value.length == 1) {
+                                        setInput("+998" + e.target.value)
+                                    } else {
+                                        setInput(e.target.value)
+                                    }
+                                }} />
 
-                        <button className="btn-send">Отправить</button>
-                    </div>
+                            <button className="btn-send">Отправить</button>
+                        </div>
+                            : ""
+                    }
                 </div>
             </div>
         </>

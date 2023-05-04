@@ -5,7 +5,6 @@ import { YMaps, Map } from "react-yandex-maps";
 export default function ContactsHero() {
     return (
         <>
-
             <div className='ContactsHero'>
                 <div className="container">
                     <div className='ContactsHero-top'>
@@ -42,7 +41,7 @@ export default function ContactsHero() {
             <div className="container">
                 <div className='ContactsHero-map'>
                     <YMaps >
-                        <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} width={1202} height={428} />
+                        <Map defaultState={{ center: [55.75, 37.57], zoom: 9 }} />
                     </YMaps>
                 </div>
             </div>

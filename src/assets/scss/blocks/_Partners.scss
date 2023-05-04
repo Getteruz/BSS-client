@@ -4,16 +4,22 @@
     padding-bottom: 93px;
 
     &-Wrap {
-
         display: flex;
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
         margin-top: 19px;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
 
 .PartnersBox {
     background: #FFFFFF;
-    width: 100%;
-    max-width: 240px;
+    width: 240px;
     padding: 54px 50px;
     text-align: center;
 

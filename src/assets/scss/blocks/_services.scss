@@ -52,6 +52,10 @@
         display: flex;
         justify-content: space-between;
 
+        @media only screen and (max-width:700px) {
+            flex-wrap: wrap;
+        }
+
         margin-top: 14px;
         margin-bottom: 69px;
 
@@ -63,10 +67,18 @@
             line-height: 22px;
             color: #171A4A;
 
+            width: 100%;
+            max-width: 588px;
+
+
+
             &:nth-child(1) {
-                width: 100%;
-                max-width: 588px;
                 margin-right: 24px;
+
+                @media only screen and (max-width:700px) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -89,12 +101,19 @@
             padding: 17px 31px 30px 35px;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-bottom: 74px;
 
             div {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
+
+                @media only screen and (max-width:1005px) {
+                    margin-bottom: 20px;
+                }
+
             }
 
             label {
@@ -106,8 +125,21 @@
                 color: #171A4A;
                 display: flex;
                 flex-direction: column;
+                flex-wrap: wrap;
                 margin-right: 30px;
                 width: 280px;
+
+                @media only screen and (max-width:848px) {
+                    width: 100%;
+                }
+
+                &:first-child {
+                    @media only screen and (max-width:848px) {
+                        margin-bottom: 20px;
+                    }
+
+
+                }
 
                 input {
                     margin-top: 5px;

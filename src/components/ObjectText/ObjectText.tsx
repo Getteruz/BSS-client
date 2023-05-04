@@ -1,8 +1,11 @@
 import React from 'react'
 
 import img from "../../assets/images/Vectorleft1.svg"
+interface Props {
+    object: any,
 
-export default function ObjectText() {
+}
+export default function ObjectText({ object }: Props) {
     return (
 
         <>
@@ -15,49 +18,19 @@ export default function ObjectText() {
             </div>
             <div className="container">
                 <ul className='ObjectText'>
-                    <li className='ObjectText-item'>
-                        <div className="ObjectText-top">
-                            <div className="ObjectText-left">
-                                <h3 className='ObjectText-title'>OOO “Safety Service”</h3>
-                                <p className='ObjectText-text'>Украина </p>
+                    {object && object?.map((e: any) => (
+                        <li className='ObjectText-item'>
+                            <div className="ObjectText-top">
+                                <div className="ObjectText-left">
+                                    <h3 className='ObjectText-title'>{e?.title}</h3>
+                                    <p className='ObjectText-text'>{e?.tag} </p>
+                                </div>
+                                <img src={img} alt="img" />
                             </div>
-                            <img src={img} alt="img" />
-                        </div>
-                        <p className='ObjectText-text2'>You shouldn't focus on why you cant do something, which is what most people do. You should focus on why perhaps you can, and be one of the exceptions.</p>
-                    </li>
-                    <li className='ObjectText-item'>
-                        <div className="ObjectText-top">
-                            <div className="ObjectText-left">
-                                <h3 className='ObjectText-title'>OOO “Safety Service”</h3>
-                                <p className='ObjectText-text'>Украина </p>
-                            </div>
-                            <img src={img} alt="img" />
-                        </div>
 
-                        <p className='ObjectText-text2'>You shouldn't focus on why you cant do something, which is what most people do. You should focus on why perhaps you can, and be one of the exceptions.</p>
-                    </li>
-
-                    <li className='ObjectText-item'>
-                        <div className="ObjectText-top">
-                            <div className="ObjectText-left">
-                                <h3 className='ObjectText-title'>OOO “Safety Service”</h3>
-                                <p className='ObjectText-text'>Украина </p>
-                            </div>
-                            <img src={img} alt="img" />
-                        </div>
-                        <p className='ObjectText-text2'>You shouldn't focus on why you cant do something, which is what most people do. You should focus on why perhaps you can, and be one of the exceptions.</p>
-                    </li>
-                    <li className='ObjectText-item'>
-                        <div className="ObjectText-top">
-                            <div className="ObjectText-left">
-                                <h3 className='ObjectText-title'>OOO “Safety Service”</h3>
-                                <p className='ObjectText-text'>Украина </p>
-                            </div>
-                            <img src={img} alt="img" />
-                        </div>
-
-                        <p className='ObjectText-text2'>You shouldn't focus on why you cant do something, which is what most people do. You should focus on why perhaps you can, and be one of the exceptions.</p>
-                    </li>
+                            <p className='ObjectText-text2'>{e?.text}</p>
+                        </li>
+                    ))}
                 </ul>
             </div >
         </>

@@ -8,15 +8,20 @@ import SafetyWrap from "../../components/safetyWrap/safetyWrap"
 import { Uzbek } from "../../components/uzbek/uzbek"
 
 
+interface Props {
+    service: any,
+    object: any,
+    news: any,
 
-export default function Home() {
+}
+export default function Home({ service, object, news }: Props) {
     return (
         <>
             <Header />
-            <Hero />
-            <SafetyWrap />
-            <Objects />
-            <Uzbek />
+            <Hero service={service} />
+            <SafetyWrap service={service} />
+            <Objects object={object} />
+            <Uzbek object={object} />
             <News />
             <Partners />
             <Footer />

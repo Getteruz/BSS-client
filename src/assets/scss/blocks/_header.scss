@@ -4,7 +4,43 @@
     background-color: #FFFFFF;
 
     z-index: 100;
+    color: white;
 
+    &__logo>circle {
+        fill: black;
+    }
+
+    &-munutext {
+        margin-right: auto;
+        margin-left: 34px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #171B4A;
+
+    }
+
+    &_burger {
+        width: 24px;
+        height: 2px;
+        background: #171B4A;
+
+        position: relative;
+        margin-bottom: 3px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 2px;
+            background: #171B4A;
+            position: absolute;
+            top: 5px;
+            left: 0;
+        }
+    }
 
     .wrapLaga {
         position: absolute;
@@ -47,6 +83,7 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        margin-left: auto;
 
         &::before {
             content: "";

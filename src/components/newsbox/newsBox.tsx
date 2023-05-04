@@ -17,7 +17,7 @@ export const NewsBox = ({ title, text, img }: Props) => {
                     <img className="NewsBox-img2" src={icon} alt="icon" />
                 </div>
             </div>
-            <img className="NewsBox-img" src={img} alt="alrt" />
+            <img className="NewsBox-img" src={img} alt="alrt" width={391} height={288} />
         </div>
     )
 }

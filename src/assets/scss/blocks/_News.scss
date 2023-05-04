@@ -6,6 +6,22 @@
         align-items: flex-start;
         justify-content: space-between;
 
+        @media only screen and (max-width:1128px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &_leftdiv {
+        display: flex;
+        align-content: center;
+
+        @media only screen and (max-width:800px) {
+            overflow: scroll;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &_left {
@@ -28,6 +44,16 @@
                 display: inline-block;
                 background-image: url("./assets/images/Grouplef.svg");
             }
+
+            @media only screen and (max-width:765px) {
+
+                margin-top: 30px;
+
+            }
+
+            @media only screen and (max-width:1128px) {
+                margin-bottom: 30px;
+            }
         }
     }
 
@@ -41,6 +67,9 @@
     border: 1px solid rgba(23, 26, 74, 0.1);
     margin-bottom: 5px;
     cursor: pointer;
+    min-width: 335px;
+
+
     &-img2 {
         display: none;
 
@@ -80,11 +109,18 @@
         opacity: 0.7;
         margin-top: 16px;
         margin-bottom: 22px;
+
     }
 
     &-btnimg {
         text-align: right;
         height: 22px;
+    }
+
+    &-img {
+        width: 391px;
+        height: 288px;
+        object-fit: cover;
     }
 }
 
@@ -105,11 +141,21 @@
     padding: 10px;
     padding-right: 19px;
     margin-top: 148px;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width:1000px) {
+        padding: 20px;
+        margin-top: 60px;
+    }
 
     &-div {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
 
+        @media only screen and (max-width:845px) {
+            margin-bottom: 30px;
+        }
     }
 
     &-img {
@@ -119,6 +165,10 @@
         border-radius: 50%;
         background: #F2F4F7;
         margin-right: 21px;
+
+        @media only screen and (max-width:688px) {
+            margin-bottom: 20px;
+        }
     }
 
     &-text {

@@ -1,16 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import routes from '../../shared/constants/routes'
+interface Props {
+    data: any;
+}
 
-export default function AboutUsHero() {
+
+export default function AboutUsHero({ data }: Props) {
+
     return (
         <div className='AboutUsHero'>
             <div className="container">
                 <div className='AboutUsHero_top'>
                     <div className='AboutUsHero_top-right'>
                         <p className='AboutUsHero_top-text2'>О Нас</p>
-                        <h2 className='AboutUsHero_top-title'>BSS Expert Safety service</h2>
-                        <p className='AboutUsHero_top-bss'>OOO “BSS Expert”</p>
+                        <h2 className='AboutUsHero_top-title'>{data?.title}</h2>
+                        <p className='AboutUsHero_top-bss'>{data?.name}</p>
 
                     </div>
                     <div className="Newshero_right">
@@ -18,7 +23,7 @@ export default function AboutUsHero() {
                         <Link to={routes.NEWS} className="ObjectsHero-tbn">Все новости</Link>
                     </div>
                 </div>
-                <p className='AboutUsHero-text'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <p className='AboutUsHero-text'>{data?.text2}</p>
             </div>
         </div>
     )

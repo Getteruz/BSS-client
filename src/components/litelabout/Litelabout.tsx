@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
+interface Props {
 
-export default function Litelabout() {
+    aboutus: any,
+
+}
+export default function Litelabout({ aboutus }: Props) {
     const [input, setInput] = useState<any>()
     return (
         <div className='container'>
 
             <h1 className="AboutUs-title">Немного о наших компании</h1>
             <div className="AboutUs-wrap">
-                <p>Гарантия увеличения объема бизнес-операций, что повышает производительность за счет сокращения аварий, перерывов и остановок операций. Снижение расходов и снижение рисков, сокращение числа рабочих дней по болезни и текучести кадров, меньше несчастных случаев и снижение риска юридических проблем.</p>
-                <p>Снижение расходов и снижение рисков, сокращение числа рабочих дней по болезни и текучести кадров, меньше несчастных случаев и снижение риска юридических проблем.</p>
+                <p>{aboutus?.text}</p>
+                <p>{aboutus?.text2}.</p>
             </div>
 
             <div className="AboutUs_form">

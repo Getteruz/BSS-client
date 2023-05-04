@@ -5,12 +5,16 @@ import Litelabout from '../../components/litelabout/Litelabout'
 import ObjectText from '../../components/ObjectText/ObjectText'
 import Partners from '../../components/partners/partners'
 
-export default function Object() {
+interface Props {
+    object: any,
+    aboutus: any,
+}
+export default function Object({ object, aboutus }: Props) {
     return (
         <>
             <Header />
-            <ObjectText />
-            <Litelabout />
+            <ObjectText object={object} />
+            <Litelabout aboutus={aboutus} />
             <Partners />
             <Footer />
         </>
