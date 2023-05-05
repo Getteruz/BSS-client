@@ -19,7 +19,7 @@ export default function Objects({ object }: Props) {
     const [number, setNunber] = useState<number>(0)
     const [number2, setNunber2] = useState<any>(1)
     const [number3, setNunber3] = useState<any>(2)
-    console.log(object[number]?.img)
+
 
     const x = useRef<any>()
 
