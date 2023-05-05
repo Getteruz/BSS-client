@@ -10,6 +10,7 @@ export default function Hero({ service }) {
         <>
 
             <div className="hero">
+                <div className='hero__background'></div>
                 <video className='videoTag' autoPlay loop muted>
                     <source src={sample} type='video/mp4' />
                 </video>

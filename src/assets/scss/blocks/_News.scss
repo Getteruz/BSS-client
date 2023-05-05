@@ -25,6 +25,15 @@
     }
 
     &_left {
+        width: 100%;
+        max-width: 284px;
+
+        @media only screen and (max-width:1128px) {
+
+            max-width: 100%;
+
+        }
+
         &-btn {
             font-family: 'Inter';
             font-style: normal;
@@ -67,11 +76,12 @@
     border: 1px solid rgba(23, 26, 74, 0.1);
     margin-bottom: 5px;
     cursor: pointer;
-    min-width: 335px;
+
 
 
     &-img2 {
         display: none;
+        transform: all .3s;
 
     }
 

@@ -156,7 +156,7 @@ main {
   width: 100%;
   position: fixed;
   background-color: #FFFFFF;
-  z-index: 100;
+  z-index: 10000;
   color: white;
 }
 .header__logo > circle {
@@ -299,6 +299,16 @@ main {
   .hero {
     padding-top: 100px;
   }
+}
+.hero__background {
+  background: linear-gradient(225.78deg, #940BD5 18.31%, #111ABF 94.41%);
+  opacity: 0.8;
+  height: 94%;
+  width: 100vw;
+  top: 0;
+  padding: none;
+  position: absolute;
+  z-index: 10;
 }
 .hero .container {
   display: flex;
@@ -527,6 +537,7 @@ main {
 }
 .safety:hover {
   background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
+  border: 1px solid transparent;
 }
 .safety:hover .safety-title {
   color: #FFFFFF;
@@ -561,6 +572,8 @@ main {
   color: #171A4A;
   width: 100%;
   max-width: 183px;
+  height: 44px;
+  overflow: hidden;
 }
 .safety-text {
   font-family: "Inter";
@@ -572,6 +585,8 @@ main {
   opacity: 0.6;
   padding-top: 10px;
   padding-bottom: 31px;
+  height: 70px;
+  overflow: hidden;
 }
 
 .Object {
@@ -1253,6 +1268,15 @@ main {
 .News_leftdiv::-webkit-scrollbar {
   display: none;
 }
+.News_left {
+  width: 100%;
+  max-width: 284px;
+}
+@media only screen and (max-width: 1128px) {
+  .News_left {
+    max-width: 100%;
+  }
+}
 .News_left-btn {
   font-family: "Inter";
   font-style: normal;
@@ -1291,10 +1315,10 @@ main {
   border: 1px solid rgba(23, 26, 74, 0.1);
   margin-bottom: 5px;
   cursor: pointer;
-  min-width: 335px;
 }
 .NewsBox-img2 {
   display: none;
+  transform: all 0.3s;
 }
 .NewsBox:hover .NewsBox-img2 {
   display: block;

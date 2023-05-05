@@ -17,7 +17,7 @@
 
     &:hover {
         background: linear-gradient(217.37deg, #700BD5 17.74%, #111ABF 99.42%), linear-gradient(130.09deg, #0BD5D2 -61.14%, #3B42C5 71.33%);
-
+        border: 1px solid transparent;
 
         .safety-title {
             color: #FFFFFF;
@@ -61,6 +61,9 @@
         color: #171A4A;
         width: 100%;
         max-width: 183px;
+
+        height: 44px;
+        overflow: hidden;
     }
 
     &-text {
@@ -73,5 +76,8 @@
         opacity: 0.6;
         padding-top: 10px;
         padding-bottom: 31px;
+        height: 70px;
+        overflow: hidden;
     }
+
 }

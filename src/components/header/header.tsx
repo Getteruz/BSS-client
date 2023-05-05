@@ -31,10 +31,10 @@ export const Header = () => {
         };
 
     }, []);
-    if (scrollPosition > 609 && y?.current) {
+    if (scrollPosition > 639 && y?.current) {
         y.current.style.background = "#ffffff"
     }
-    if (scrollPosition < 609 && y?.current && router.pathname == '/') {
+    if (scrollPosition < 639 && y?.current && router.pathname == '/') {
         y.current.style.background = "transparent"
     }
 
@@ -42,8 +42,8 @@ export const Header = () => {
         <>
             <header ref={y} className="header">
                 <div className="container_header">
-                    <Link to={routes.HOME}>  <Logo fill={'black'} /></Link>
-                    {widthwindow > 1130 ? <Sidebar /> : widthwindow > 500 ? <p className="header-munutext">MENU</p> : ""}
+                    <Link to={routes.HOME}>  <Logo fill={'#3B42C5'} fill2={'#57C5B6'} /></Link>
+                    {widthwindow > 1145 ? <Sidebar /> : widthwindow > 500 ? <p className="header-munutext">MENU</p> : ""}
 
                     <p className="header_language"> {widthwindow > 684 ? <>Русский</> : <>Ру</>}
                         <ul className="wrapLaga">
