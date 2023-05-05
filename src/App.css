@@ -214,6 +214,11 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+.header_languagewrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .header_language {
   font-family: "Inter";
   font-style: normal;
@@ -227,16 +232,11 @@ main {
   cursor: pointer;
   margin-left: auto;
 }
-.header_language::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 5px;
-  background-image: url("./assets/images/languageVector.svg");
-}
 .header_language:hover .wrapLaga {
   display: flex;
+}
+.header_language:hover .wrapLaga li {
+  color: black;
 }
 .header_language:hover .wrapLaga:hover {
   display: flex;
@@ -244,11 +244,10 @@ main {
 .header_language:hover .wrapLaga li:hover {
   color: #3B42C5;
 }
-.header_icons img {
-  cursor: pointer;
-  margin-left: 25px;
-}
-.header_icons img:first-child {
+.header_icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
   margin-left: 32px;
 }
 
@@ -275,6 +274,10 @@ main {
   font-size: 14px;
   line-height: 17px;
   color: #171B4A;
+}
+
+.white {
+  color: #FFFFFF;
 }
 
 .wrap {

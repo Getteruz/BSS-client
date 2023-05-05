@@ -72,6 +72,12 @@
         justify-content: space-between;
     }
 
+    &_languagewrap {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
     &_language {
         font-family: 'Inter';
         font-style: normal;
@@ -85,18 +91,15 @@
         cursor: pointer;
         margin-left: auto;
 
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin-right: 5px;
-            background-image: url('./assets/images/languageVector.svg');
-        }
+
 
         &:hover {
             .wrapLaga {
                 display: flex;
+
+                li {
+                    color: black;
+                }
 
                 &:hover {
                     display: flex;
@@ -114,14 +117,10 @@
     }
 
     &_icons {
-        img {
-            &:first-child {
-                margin-left: 32px;
-            }
-
-            cursor: pointer;
-            margin-left: 25px;
-        }
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-left: 32px;
     }
 }
 
@@ -160,6 +159,10 @@
     }
 
 
+}
+
+.white {
+    color: #FFFFFF;
 }
 
 .wrap {
