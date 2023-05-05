@@ -17,7 +17,7 @@ export const Header = () => {
     const widthwindow: any = useGetWindowWidth()
     const router: any = useLocation()
     const [scrollPosition, setScrollPosition] = useState<any>(0);
-    // const [colose, setColose] = useState<any>(false);
+    const [color, setColor] = useState<any>("block");
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
@@ -33,17 +33,19 @@ export const Header = () => {
     }, []);
     if (scrollPosition > 639 && y?.current) {
         y.current.style.background = "#ffffff"
+
     }
     if (scrollPosition < 639 && y?.current && router.pathname == '/') {
         y.current.style.background = "transparent"
+
     }
 
     return (
         <>
             <header ref={y} className="header">
                 <div className="container_header">
-                    <Link to={routes.HOME}>  <Logo fill={'#3B42C5'} fill2={'#57C5B6'} /></Link>
-                    {widthwindow > 1145 ? <Sidebar /> : widthwindow > 500 ? <p className="header-munutext">MENU</p> : ""}
+                    <Link to={routes.HOME}>  {scrollPosition < 639 && router.pathname == '/' ? <Logo fill={'#ffffff'} fill2={'#ffffff'} /> : <Logo fill={'#3B42C5'} fill2={'#57C5B6'} />}</Link>
+                    {widthwindow > 1145 ? <Sidebar /> : widthwindow > 500 ? <p className={`header-munutext ${color}`}>MENU</p> : ""}
 
                     <p className="header_language"> {widthwindow > 684 ? <>Русский</> : <>Ру</>}
                         <ul className="wrapLaga">
