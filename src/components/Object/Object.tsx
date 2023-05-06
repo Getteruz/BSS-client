@@ -47,9 +47,9 @@ export default function Objects({ object }: Props) {
                         </div> : ""}
 
                         <p className="Object_region-text">{object[number]?.text}</p>
-                        {/* <img className="Object_region-images2" src={object[number3]?.img[0]?.url} width={336} height={413} alt="" /> */}
-                        {/* <img className="Object_region-images3" src={object[number2]?.img[0]?.url} width={378} height={441} alt="" />
-                        <img className="Object_region-images" src={object[number]?.img[0]?.url} width={413} height={495} alt="" /> */}
+                        <img className="Object_region-images2" src={object[number3]?.img[0]?.url} width={336} height={413} alt="" />
+                        <img className="Object_region-images3" src={object[number2]?.img[0]?.url} width={378} height={441} alt="" />
+                        <img className="Object_region-images" src={object[number]?.img[0]?.url} width={413} height={495} alt="" />
                         <div className="Object_region-icons">
                             <div>
 

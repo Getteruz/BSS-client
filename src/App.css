@@ -155,7 +155,7 @@ main {
 .header {
   width: 100%;
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: transparent;
   z-index: 10000;
   color: white;
 }
@@ -305,7 +305,7 @@ main {
 }
 .hero__background {
   background: linear-gradient(225.78deg, #940BD5 18.31%, #111ABF 94.41%);
-  opacity: 0.8;
+  opacity: 0.5;
   height: 94%;
   width: 100vw;
   top: 0;
