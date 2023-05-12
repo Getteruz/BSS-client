@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 import img from "../../assets/images/Vectorleft1.svg"
 interface Props {
@@ -6,6 +7,7 @@ interface Props {
 
 }
 export default function ObjectText({ object }: Props) {
+    const { i18n } = useTranslation()
     return (
 
         <>
@@ -22,13 +24,13 @@ export default function ObjectText({ object }: Props) {
                         <li className='ObjectText-item'>
                             <div className="ObjectText-top">
                                 <div className="ObjectText-left">
-                                    <h3 className='ObjectText-title'>{e?.title}</h3>
-                                    <p className='ObjectText-text'>{e?.tag} </p>
+                                    <h3 className='ObjectText-title'>{e?.[`${i18n.language}_title`]}</h3>
+                                    <p className='ObjectText-text'>{e?.[`${i18n.language}_tag`]} </p>
                                 </div>
                                 <img src={img} alt="img" />
                             </div>
 
-                            <p className='ObjectText-text2'>{e?.text}</p>
+                            <p className='ObjectText-text2'>{e?.[`${i18n.language}_text`]}</p>
                         </li>
                     ))}
                 </ul>

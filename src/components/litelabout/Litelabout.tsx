@@ -6,6 +6,7 @@ interface Props {
 }
 export default function Litelabout({ aboutus }: Props) {
     const [input, setInput] = useState<any>()
+
     return (
         <div className='container'>
 

@@ -22,7 +22,7 @@ export default function Home({ service, object, news }: Props) {
             <SafetyWrap service={service} />
             <Objects object={object} />
             <Uzbek object={object} />
-            <News />
+            <News news={news} />
             <Partners />
             <Footer />
         </>

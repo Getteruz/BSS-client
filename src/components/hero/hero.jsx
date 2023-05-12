@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useGetWindowWidth } from "../../shared/hooks/useGetWindowWith";
 import Safety from "../safety/safety";
 import TelNumber from "../telnumber/TelNumber";
 import sample from '../../assets/vidoe/dasads.mp4'
+import { useRoutes } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Hero({ service }) {
     const widthwindow = useGetWindowWidth()
+    const { i18n } = useTranslation()
+
+
+
     return (
         <>
 
@@ -22,7 +28,7 @@ export default function Hero({ service }) {
                         </div>
                         <div className="hero-safety">
                             {service && service.slice(0, 2)?.map((e) => (
-                                <Safety title={e?.title} text={e?.text} id={e?._id} />
+                                <Safety title={e?.[`${i18n.language}_title`]} text={e?.[`${i18n.language}_text`]} id={e?._id} />
                             ))}
                         </div>
                     </div>

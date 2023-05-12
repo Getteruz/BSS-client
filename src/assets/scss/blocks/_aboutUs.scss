@@ -240,3 +240,21 @@
         }
     }
 }
+
+.hello {
+    padding: 5rem;
+    background-color: red;
+    color: #fff;
+    height: 100vh;
+    width: none;
+
+    &-div {
+        background-color: lightblue;
+        height: 300px;
+        width: 700px !important;
+
+        h3 {
+            text-align: center;
+        }
+    }
+}

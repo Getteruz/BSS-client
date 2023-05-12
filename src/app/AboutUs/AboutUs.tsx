@@ -7,14 +7,15 @@ import Team from '../../components/Team/Team'
 import { GetAboutUs } from '../../shared/api/aboutUs'
 interface Props {
     aboutus: any;
+    object: any,
 }
-export default function AboutUs({ aboutus }: Props) {
+export default function AboutUs({ aboutus, object }: Props) {
     return (
         <>
             <Header />
             <AboutUsHero data={aboutus} />
             <Team data={aboutus} />
-            <ObjectsNews />
+            <ObjectsNews object={object} />
             <Footer />
         </>
     )

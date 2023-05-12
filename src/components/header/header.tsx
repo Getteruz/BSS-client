@@ -7,10 +7,11 @@ import TelNumber from "../telnumber/TelNumber";
 import { useEffect, useRef, useState } from "react";
 import { useGetWindowWidth } from "../../shared/hooks/useGetWindowWith";
 import { Facebook, Instagram, LanguageIcon, Linkedin, Logo, Twitter } from "../icons";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
     const x = useRef<any>()
-
+    const { i18n } = useTranslation()
     const widthwindow: any = useGetWindowWidth()
     const router: any = useLocation()
     const [scrollPosition, setScrollPosition] = useState<any>(0);
@@ -53,10 +54,10 @@ export const Header = () => {
                             style={(scrollPosition < 629 && router.pathname == '/') ? { color: "white" } : { color: "black" }}
                         >  {widthwindow > 684 ? <>  Русский</> : <>Ру</>}
                             <ul className="wrapLaga">
-                                <li>O'zbekcha</li>
-                                <li>Turkce</li>
-                                <li>English</li>
-                                <li>Русский</li>
+                                <li onClick={() => i18n.changeLanguage('uz')}>O'zbekcha</li>
+                                <li onClick={() => i18n.changeLanguage('tr')}>Turkce</li>
+                                <li onClick={() => i18n.changeLanguage('en')}>English</li>
+                                <li onClick={() => i18n.changeLanguage('ru')}>Русский</li>
                             </ul>
                         </p>
                     </div>

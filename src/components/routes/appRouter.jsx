@@ -66,13 +66,11 @@ export default function AppRouter() {
       <Route path={routes.HOME} element={<Home service={service} news={news} object={object} />} />
       <Route path={routes.SERVICES} element={<Services service={service} aboutus={aboutus} />} />
       <Route path={routes.OBJECT} element={<Object object={object} aboutus={aboutus} />} />
-
       <Route path={routes.NEWS} element={<ObjectPage news={news} />} />
-      <Route path={routes.ONENEW} element={<NewsPage />} />
+      <Route path={routes.NEWS + '/:id'} element={<NewsPage object={object} />} />
       <Route path={routes.CONTACT} element={<Contacts />} />
-      <Route path={routes.ABOUTUS} element={<AboutUs aboutus={aboutus} />} />
+      <Route path={routes.ABOUTUS} element={<AboutUs aboutus={aboutus} object={object} />} />
       <Route path={routes.HELP} element={<Help />} />
-
     </Routes>
   );
 }

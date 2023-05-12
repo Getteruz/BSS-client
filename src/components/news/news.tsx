@@ -6,7 +6,12 @@ import { Link } from "react-router-dom"
 import routes from "../../shared/constants/routes"
 import TelNumber from "../telnumber/TelNumber"
 import { useRef } from "react"
-export const News = () => {
+import { useTranslation } from "react-i18next"
+interface Props {
+    news: any,
+}
+export const News = ({ news }: Props) => {
+    const { i18n } = useTranslation()
     const x = useRef<any>()
     return (
         <div className="News">
@@ -16,8 +21,10 @@ export const News = () => {
                     <Link to={routes.NEWS} className="News_left-btn">Все новости</Link>
                 </div>
                 <div className='News_leftdiv'>
-                    <NewsBox title={"Отчет об устойчивом развитии"} text={"If everything seems under control, youre just not going fast enough."} img={img} />
-                    <NewsBox title={"Отчет об устойчивом развитии"} text={"If everything seems under control, youre just not going fast enough."} img={img} />
+                    {news && news?.map((e: any) => (
+                        <NewsBox id={e?._id} key={e?._id} title={e?.[`${i18n.language}_title`]} text={e?.[`${i18n.language}_text`]} img={e?.img[0]?.url} />
+                    ))}
+
                 </div>
             </div >
             <div className="container">

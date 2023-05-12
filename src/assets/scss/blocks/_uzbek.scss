@@ -3,19 +3,14 @@
     background: linear-gradient(232.21deg, #700BD5 21.12%, #111ABF 98.35%);
     overflow: hidden;
     margin-bottom: 143px;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 90px;
+    padding-bottom: 171px;
 
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #FFFFFF;
-
-        @media only screen and (max-width:800px) {
-            flex-wrap: wrap;
-        }
+    @media only screen and (max-width:900px) {
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
+
 
     &-right {
         width: 100%;
@@ -295,4 +290,95 @@
     100% {
         opacity: 0;
     }
+}
+
+.Accredited {
+    &-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 40px;
+
+
+        color: #FFFFFF;
+        margin-bottom: 95px;
+
+        @media only screen and (max-width:990px) {
+            margin-bottom: 45px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    &__wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 146px;
+
+        @media only screen and (max-width:1100px) {
+            gap: 100px;
+        }
+
+        @media only screen and (max-width:900px) {
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        &-title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            color: #FFFFFF;
+            margin-top: 47px;
+            margin-bottom: 23px;
+
+            @media only screen and (max-width:1140px) {
+                width: 100%;
+                font-size: 32px;
+                line-height: 34px;
+                margin-top: 42px;
+                margin-bottom: 20px;
+            }
+
+            @media only screen and (max-width:990px) {
+                width: 100%;
+                font-size: 30px;
+                line-height: 32px;
+                margin-top: 32px;
+                margin-bottom: 16px;
+            }
+
+        }
+
+        &-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            color: #FFFFFF;
+            opacity: 0.7;
+        }
+
+        &-card {
+            &:first-child {
+                .Accredited__wrap-title {
+
+                    width: 300px;
+                    margin-top: 36px;
+
+                    @media only screen and (max-width:900px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
 }

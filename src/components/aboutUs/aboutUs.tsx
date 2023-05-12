@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Litelabout from "../litelabout/Litelabout";
 import Safety from "../safety/safety";
 interface Props {
@@ -6,12 +7,12 @@ interface Props {
 
 }
 export default function AboutUs({ service, aboutus }: Props) {
-
+    const { i18n } = useTranslation()
     return (
         <div className="container">
             <div className="hero-safety2" >
                 {service && service?.map((e: any) => (
-                    <Safety title={e?.title} text={e?.text} id={e?._id} />
+                    <Safety title={e?.[`${i18n.language}_title`]} text={e?.[`${i18n.language}_text`]} id={e?._id} />
                 ))}
 
             </div>

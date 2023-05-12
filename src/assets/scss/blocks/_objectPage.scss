@@ -87,3 +87,199 @@
 
     margin-bottom: 81px;
 }
+
+.Object {
+    &__cardsBox {
+        margin-top: 63px;
+        margin-bottom: 86px;
+
+
+
+        &-imgdiv {
+            width: 385px;
+            height: 489px;
+        }
+
+        &-div {
+            background-color: lightblue;
+            height: 300px;
+        }
+
+        &-img {
+            display: inline-block;
+            width: 385px;
+            height: 489px;
+            object-fit: cover;
+        }
+
+        &-content {
+            width: 292px;
+        }
+
+        &-box {
+            width: 792px !important;
+            display: flex !important;
+            align-items: center;
+            gap: 50px;
+            background: #FFFFFF;
+            margin-left: 24px;
+            padding-right: 65px;
+            margin-bottom: 88px;
+        }
+
+        &-country {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #171A4A;
+
+        }
+
+        &-title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 39px;
+            color: #171A4A;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        &-text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 19px;
+            color: #171A4A;
+            width: 100%;
+        }
+
+        &-dote {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            align-items: center;
+            margin-top: 108px;
+            margin-bottom: 86px;
+
+            .doteroundwithborder {
+                display: inline-block;
+                width: 7.58px;
+                height: 7.58px;
+                border-radius: 50%;
+                background-color: #171A4A;
+
+                &::before {
+                    display: none;
+                }
+
+            }
+        }
+
+        &-doteround {
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            border: 1px solid #171A4A;
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            &::before {
+                content: "";
+
+                display: inline-block;
+                width: 7.58px;
+                height: 7.58px;
+                border-radius: 50%;
+                background-color: #171A4A;
+
+            }
+
+        }
+
+    }
+
+    &__pluss {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        &-card {
+            width: 100%;
+            max-width: 384px;
+            background: #FFFFFF;
+            text-align: center;
+
+            padding-bottom: 62px;
+
+
+            &:first-child {
+                padding-top: 44px;
+
+                img {
+                    margin-bottom: 19px;
+                }
+
+            }
+
+            &:nth-child(2) {
+                padding-top: 54px;
+
+                img {
+                    margin-bottom: 28px;
+                }
+
+            }
+
+            &:nth-child(3) {
+                padding-top: 56px;
+
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &-title {
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 46px;
+                text-align: center;
+                color: #171A4A;
+
+            }
+        }
+    }
+
+    &__texts {
+        background: #FFFFFF;
+        padding: 50px 62px 90px 60px;
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        color: #171A4A;
+
+    }
+}
+
+
+
+.slick-slider {
+    width: 95vw !important;
+    margin: 0 auto;
+}
