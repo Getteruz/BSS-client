@@ -10,7 +10,7 @@ interface Props {
 }
 export default function Objects({ object }: Props) {
     const { i18n } = useTranslation()
-
+    const { t } = useTranslation()
     const x = useRef<any>()
     var settings = {
         dots: true,
@@ -25,7 +25,7 @@ export default function Objects({ object }: Props) {
         <>
             <div className="Object">
                 <div className="container">
-                    <Titles span="Наше проекты" text="которые предоставляемых нами услуг." title="Примеры объектов!" />
+                    <Titles span={t('ourProject')} text={t('ourProjectText')} title={t('ourProjectTitle')} />
                 </div>
                 < div className="Object__cardsBox" >
                     <Slider {...settings} centerMode centerPadding="500px">
@@ -49,19 +49,19 @@ export default function Objects({ object }: Props) {
                     <div className="Object__pluss">
                         <div className="Object__pluss-card">
                             <img src={img1} alt="img" />
-                            <h2 className="Object__pluss-title">Среда</h2>
+                            <h2 className="Object__pluss-title">{t('serviceCenter')}</h2>
                         </div>
                         <div className="Object__pluss-card">
                             <img src={img2} alt="img" />
-                            <h2 className="Object__pluss-title">Безопасности</h2>
+                            <h2 className="Object__pluss-title">{t('serviceSafety')}</h2>
                         </div>
                         <div className="Object__pluss-card">
                             <img src={img3} alt="img" />
-                            <h2 className="Object__pluss-title">Здоровья</h2>
+                            <h2 className="Object__pluss-title">{t('serviceHaelty')}</h2>
                         </div>
                     </div>
                     <div className="Object__texts">
-                        Как полностью интегрированная компания по оказанию профессиональных услуг и управлению проектами с офисами по всему миру, мы работаем в соответствии с нашими четырьмя основными ценностями: безопасность, добросовестность, сотрудничество и инновации. Мы коллективно обязуемся защищать наших сотрудников, заинтересованные стороны и окружающую среду от вреда.
+                        {t('serviceText1')}
                     </div>
                 </div>
             </div >

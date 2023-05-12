@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 export default function Hero({ service }) {
     const widthwindow = useGetWindowWidth()
     const { i18n } = useTranslation()
-
+    const { t } = useTranslation()
 
 
     return (
@@ -23,8 +23,8 @@ export default function Hero({ service }) {
                 <div className="container">
                     <div className="hero_left">
                         <div className="hero_left-wrap">
-                            <h1 className="hero_left-title">Что нужно знать, чтобы обезопасить своих сотрудников в вашей компании</h1>
-                            <p className="hero_left-text">Обеспечение безопасности ваших сотрудников и бесперебойной работы вашего бизнеса — наша главная задача!</p>
+                            <h1 className="hero_left-title">{t('headerTitile')}</h1>
+                            <p className="hero_left-text">{t('headerText')}</p>
                         </div>
                         <div className="hero-safety">
                             {service && service.slice(0, 2)?.map((e) => (

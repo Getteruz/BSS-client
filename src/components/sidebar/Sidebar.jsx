@@ -8,13 +8,12 @@ export default function Sidebar({ color }) {
 
   return (
     <ul className="SiteBar_list ">
-      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.ABOUTUS}>{t('О компании')}</Link></li>
-      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.SERVICES}>Услуги</Link></li>
-      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.OBJECT}>Объекты</Link></li>
-      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.NEWS}>Новости</Link></li>
-      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.CONTACT}>Контакты</Link></li>
+      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.ABOUTUS}>{t('aboutCompany')}</Link></li>
+      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.SERVICES}>{t('service')}</Link></li>
+      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.OBJECT}>{t('object')}</Link></li>
+      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.NEWS}>{t('news')}</Link></li>
+      <li className="SiteBar_list-item"> <Link className={`SiteBar_list-link ${color}`} to={routes.CONTACT}>{t('contact')}</Link></li>
     </ul>
 
   );
 }
-<li className="SiteBar_list-item"> <Link className="SiteBar_list-link" to={routes.NEWS}>Новости</Link></li>

@@ -1,11 +1,13 @@
+import { useTranslation } from "react-i18next";
 import PartnersBox from "../partnersBox/partnersBox";
 import Titles from "../titles/titles";
 
 export default function Partners() {
+    const { t } = useTranslation()
     return (
         <div className="Partners">
             <div className="container">
-                <Titles span="Мы благодарны" title="Наше партнеры" text={""} />
+                <Titles span={t('grateful')} title={t('gratefulPartnors')} text={""} />
 
             </div>
 

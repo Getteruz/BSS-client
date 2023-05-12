@@ -1,3 +1,36 @@
 {
-    "О компании": "About company"
+    "aboutCompany":"About company",
+    "service":"Services",
+    "object":"Objects",
+    "news":"News",
+    "contact":"Contacts",
+    "lang":"English",
+    "request":"Submit application",
+    "headerTitile":"We must ensure the safety of our employees",
+    "headerText":"The security and stability of your business is our priority!",
+    "contactTalk":"Contact for consultation:",
+    "contactText":"Leave your phone number for a call back?",
+    "send":"Send",
+    "ourProject":"Our projects",
+    "ourProjectTitle":"Object examples!",
+    "ourProjectText":"which are the services we provide.",
+    "serviceCenter":"Wednesday",
+    "serviceSafety":"Security",
+    "serviceHaelty":"health",
+    "serviceText1":"As a fully integrated professional services and project management company with offices around the world, we operate in accordance with our four core values: Safety, Integrity, Collaboration and Innovation. We are collectively committed to protecting our employees, stakeholders and the environment from harm.",
+    "Accredited":"Accredited",
+
+    "AccreditedText":"Our company is the first and only delivery partner of the British Safety Council since 2015 in Turkey. audit and consulting services.",
+   
+    "AccreditedText2":"Our company is the first and only delivery partner of the British Safety Council since 2015 in Turkey. audit and consulting services.",
+    "newsSpan":"News",
+    "newsTitle":"Last news",
+    "newsText":"Read all about our latest projects, events and company announcements",
+    "newsBtn":"All news",
+    "settingsText":"If you want to check the safety of your facility and your employees, submit a request!",
+    "grateful":"We are grateful",
+    "gratefulPartnors":"Our partners",
+    "allSave":"© 2023 All rights reserved.",
+    "aboutUs":"About Us",
+    "help":"Help"
 }

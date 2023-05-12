@@ -30,7 +30,7 @@ export const Header = () => {
 
     }, []);
 
-
+    const { t } = useTranslation()
 
 
 
@@ -52,7 +52,7 @@ export const Header = () => {
 
                             className="header_language"
                             style={(scrollPosition < 629 && router.pathname == '/') ? { color: "white" } : { color: "black" }}
-                        >  {widthwindow > 684 ? <>  Русский</> : <>Ру</>}
+                        >  {widthwindow > 684 ? <>  {t('lang')}</> : <>Ру</>}
                             <ul className="wrapLaga">
                                 <li onClick={() => i18n.changeLanguage('uz')}>O'zbekcha</li>
                                 <li onClick={() => i18n.changeLanguage('tr')}>Turkce</li>
@@ -67,7 +67,7 @@ export const Header = () => {
                             className="btn"
                             onClick={() => x.current.style.display = "block"}
                             style={(scrollPosition < 629 && router.pathname == '/') ? { background: "white", color: "#3B42C5" } : { background: "#3B42C5", color: "white" }}
-                        >Оставить заявку</button>
+                        >{t('request')}</button>
                         <div className="header_icons">
                             <Linkedin fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "#3910CE"} />
                             <Twitter fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "#3910CE"} />

@@ -12,13 +12,14 @@ interface Props {
 }
 export const News = ({ news }: Props) => {
     const { i18n } = useTranslation()
+    const { t } = useTranslation()
     const x = useRef<any>()
     return (
         <div className="News">
             <div className="container">
                 <div className="News_left">
-                    <Titles span={"Новости"} title={"Последние новости"} text={"Читайте все о наших последних проектах, события и объявлениях компании"} />
-                    <Link to={routes.NEWS} className="News_left-btn">Все новости</Link>
+                    <Titles span={t('newsSpan')} title={t('newsTitle')} text={t('newsText')} />
+                    <Link to={routes.NEWS} className="News_left-btn">{t('newsBtn')}</Link>
                 </div>
                 <div className='News_leftdiv'>
                     {news && news?.map((e: any) => (
@@ -33,9 +34,9 @@ export const News = ({ news }: Props) => {
                         <div className="setting-img">
                             <img src={Settings} alt="Settings" />
                         </div>
-                        <p className="setting-text">Если вы хотите проверить безопасность вашего объекта и ваших сотрудников, отправьте заявку!</p>
+                        <p className="setting-text">{t('settingsText')}</p>
                     </div>
-                    <button className="btn" onClick={() => x.current.style.display = "block"} >Оставить заявку</button>
+                    <button className="btn" onClick={() => x.current.style.display = "block"} >{t('request')}</button>
                 </div>
             </div >
             <div ref={x} className="wrap" onClick={(e: any) => {

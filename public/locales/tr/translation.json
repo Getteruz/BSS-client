@@ -1,3 +1,36 @@
 {
-    "О компании": "О компании"
+    "aboutCompany":"Şirket hakkında",
+    "service":"Hizmetler",
+    "object":"Nesneler",
+    "news":"Haberler",
+    "contact":"Kişiler",
+    "lang":"Turkey",
+    "request":"Başvurunuzu gönderin",
+    "headerTitile":"Çalışanlarımızın güvenliğini sağlamalıyız",
+    "headerText":"İşletmenizin güvenliği ve istikrarı önceliğimizdir!",
+    "contactTalk":"Danışmanlık için iletişim:",
+    "contactText":"Geri arama için telefon numaranızı bırakın?",
+    "send":"Göndermek",
+    "ourProject":"Projelerimiz",
+    "ourProjectTitle":"Nesne örnekleri!",
+    "ourProjectText":"sağladığımız hizmetler nelerdir.",
+    "serviceCenter":"Çarşamba",
+    "serviceSafety":"Güvenlik",
+    "serviceHaelty":"Sağlık",
+    "serviceText1":"Dünyanın dört bir yanında ofisleri bulunan tam entegre bir profesyonel hizmetler ve proje yönetimi şirketi olarak, dört temel değerimize uygun olarak faaliyet gösteriyoruz: Güvenlik, Dürüstlük, İşbirliği ve Yenilik. Çalışanlarımızı, paydaşlarımızı ve çevreyi zarar görmekten korumaya toplu olarak kararlıyız.",
+    "Accredited":"Akredite",
+  
+    "AccreditedText":"Şirketimiz 2015 yılından beri British Safety Council'in Türkiye'deki ilk ve tek teslimat ortağıdır. denetim ve danışmanlık hizmetleri.",
+  
+    "AccreditedText2":"Şirketimiz 2015 yılından beri British Safety Council'in Türkiye'deki ilk ve tek teslimat ortağıdır. denetim ve danışmanlık hizmetleri..",
+    "newsSpan":"Haberler",
+    "newsTitle":"Son haberler",
+    "newsText":"En son projelerimiz, etkinliklerimiz ve şirket duyurularımız hakkında her şeyi okuyun",
+    "newsBtn":"Bütün haberler",
+    "settingsText":"Tesisinizin ve çalışanlarınızın güvenliğini kontrol etmek istiyorsanız bir talep gönderin!",
+    "grateful":"minnettarız",
+    "gratefulPartnors":"Bizim ortaklarımız",
+    "allSave":"© 2023 Tüm hakları saklıdır.",
+    "aboutUs":"Hakkımızda",
+    "help":"Yardım"
 }
