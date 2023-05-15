@@ -30,5 +30,17 @@
     "gratefulPartnors":"Bizning hamkorlarimiz",
     "allSave":"© 2023 Barcha huquqlar himoyalangan.",
     "aboutUs":"Biz haqimizda",
-    "help":"Yordam"
+    "help":"Yordam",
+    "outService":"Наше услуги",
+    "outServiceTitle":"Услуги, которые мы предлагаем!",
+    "outServiceText":"которые предоставляемых нами услуг.",
+    "lititleAbout":"Немного о наших компании",
+    "name":"Имя",
+    "lastname":"Номер телефона",
+    "ourContact":"Наше контакты",
+    "ourAddress":"Наш адресс:",
+    "number":"Номер",
+    "mail":"E-mail",
+    "interist":"Заинтересованы в сотрудничестве с нами?",
+    "call":"Позвоните"
 }

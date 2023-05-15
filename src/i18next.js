@@ -10,7 +10,7 @@ i18n
     .init({
         debug: true,
         fallbackLng: 'ru',
-        supportedLngs: ['ru', 'uz', 'ru', 'en'],
+        supportedLngs: ['ru', 'uz', 'tr', 'en'],
         backend: {
             loadPath: '/locales/{{lng}}/{{ns}}.json'
         }
