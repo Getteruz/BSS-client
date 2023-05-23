@@ -584,8 +584,8 @@ main {
   line-height: 16px;
   color: #171A4A;
   opacity: 0.6;
-  padding-top: 10px;
-  padding-bottom: 31px;
+  margin-top: 10px;
+  margin-bottom: 31px;
   height: 70px;
   overflow: hidden;
 }
@@ -1880,6 +1880,12 @@ main {
   justify-content: space-between;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 800px) {
+  .Object__pluss {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .Object__pluss-card {
   width: 100%;
   max-width: 384px;
@@ -1924,6 +1930,13 @@ main {
   font-size: 24px;
   line-height: 38px;
   color: #171A4A;
+}
+@media only screen and (max-width: 800px) {
+  .Object__texts {
+    padding: 20px;
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .slick-slider {
