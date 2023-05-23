@@ -44,7 +44,7 @@ export const Header = () => {
                     {widthwindow > 1145 ? <>
                         {scrollPosition < 629 && router.pathname == '/' ? <Sidebar color={'white'} /> : <Sidebar color={'none'} />}
 
-                    </> : widthwindow > 500 ? <p className={`header-munutext ${color}`}>MENU</p> : ""}
+                    </> : widthwindow > 500 ? <p className={`header-munutext ${color}`} style={(scrollPosition < 629 && router.pathname == '/') ? { color: "white" } : { color: "black" }}>MENU</p> : ""}
 
                     <div className={'header_languagewrap'}>
                         <LanguageIcon fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "black"} />
@@ -75,7 +75,10 @@ export const Header = () => {
                             <Instagram fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "#3910CE"} />
 
                         </div>
-                    </> : <div className='header_burger'></div>
+                    </> : <div>
+                        <div className='header_burger' style={(scrollPosition < 629 && router.pathname == '/') ? { background: "white" } : { background: "black" }}></div>
+                        <div className='header_burger' style={(scrollPosition < 629 && router.pathname == '/') ? { background: "white" } : { background: "black" }}></div>
+                    </div>
                     }
                 </div>
                 <div ref={x} className="wrap" onClick={(e: any) => {

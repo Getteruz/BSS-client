@@ -177,18 +177,9 @@ main {
   width: 24px;
   height: 2px;
   background: #171B4A;
-  position: relative;
-  margin-bottom: 3px;
 }
-.header_burger::before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 2px;
-  background: #171B4A;
-  position: absolute;
-  top: 5px;
-  left: 0;
+.header_burger:first-child {
+  margin-bottom: 3px;
 }
 .header .wrapLaga {
   position: absolute;
@@ -203,6 +194,7 @@ main {
   max-width: 184px;
   padding: 20px;
   padding-bottom: 8px;
+  transform: translate(-60px, 0);
 }
 .header .wrapLaga li {
   margin-bottom: 12px;
@@ -397,6 +389,11 @@ main {
   line-height: 54px;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1200px) {
+  .hero_left-title {
+    height: 162px;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .hero_left-title {
     font-weight: 900;
@@ -420,7 +417,7 @@ main {
   color: #FFFFFF;
   opacity: 0.6;
   margin-top: 16px;
-  margin-bottom: 93px;
+  margin-bottom: 150px;
   width: 100%;
   max-width: 630px;
 }

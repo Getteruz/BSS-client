@@ -28,19 +28,11 @@
         height: 2px;
         background: #171B4A;
 
-        position: relative;
-        margin-bottom: 3px;
 
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 24px;
-            height: 2px;
-            background: #171B4A;
-            position: absolute;
-            top: 5px;
-            left: 0;
+        &:first-child {
+            margin-bottom: 3px;
         }
+
     }
 
     .wrapLaga {
@@ -54,8 +46,10 @@
         border-radius: 4px;
         width: 100%;
         max-width: 184px;
+
         padding: 20px;
         padding-bottom: 8px;
+        transform: translate(-60px, 0);
 
         li {
             margin-bottom: 12px;

@@ -5,6 +5,7 @@ import img3 from '../../assets/images/AirBalloon.png'
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
+import { useGetWindowWidth } from "../../shared/hooks/useGetWindowWith";
 interface Props {
     object: any,
 }
@@ -12,6 +13,7 @@ export default function Objects({ object }: Props) {
     const { i18n } = useTranslation()
     const { t } = useTranslation()
     const x = useRef<any>()
+    const [width, setWidth] = useState()
     var settings = {
         dots: true,
         infinite: false,
@@ -19,7 +21,10 @@ export default function Objects({ object }: Props) {
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 1,
+        centerPadding: 500
     };
+    const widthwindow = useGetWindowWidth()
+
 
     return (
         <>
@@ -28,7 +33,7 @@ export default function Objects({ object }: Props) {
                     <Titles span={t('ourProject')} text={t('ourProjectText')} title={t('ourProjectTitle')} />
                 </div>
                 < div className="Object__cardsBox" >
-                    <Slider {...settings} centerMode centerPadding="500px">
+                    <Slider {...settings} centerMode centerPadding={'500px'}>
                         {object && object?.map((e: any) => (
                             <div className="Object__cardsBox-box">
                                 <div className="Object__cardsBox-imgdiv">
