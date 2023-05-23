@@ -1763,6 +1763,24 @@ main {
 .Object__cardsBox {
   margin-top: 63px;
   margin-bottom: 86px;
+  display: flex;
+  overflow: scroll;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.Object__cardsBox::-webkit-scrollbar {
+  width: 2px;
+  height: 3px;
+}
+.Object__cardsBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.Object__cardsBox::-webkit-scrollbar-thumb {
+  background: rgb(230, 227, 227);
+}
+.Object__cardsBox::-webkit-scrollbar-thumb:hover {
+  background: rgb(210, 207, 207);
 }
 .Object__cardsBox-imgdiv {
   width: 385px;

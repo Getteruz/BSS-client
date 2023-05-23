@@ -20,7 +20,7 @@ export default function Home({ service, object, news }: Props) {
             <Header />
             <Hero service={service} />
             <SafetyWrap service={service} />
-            {/* <Objects object={object} /> */}
+            <Objects object={object} />
             <Uzbek object={object} />
             <News news={news} />
             <Partners />

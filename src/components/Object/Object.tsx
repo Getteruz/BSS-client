@@ -20,8 +20,7 @@ export default function Objects({ object }: Props) {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        initialSlide: 1,
-        centerPadding: 500
+        initialSlide: 1
     };
     const widthwindow = useGetWindowWidth()
 
@@ -33,21 +32,21 @@ export default function Objects({ object }: Props) {
                     <Titles span={t('ourProject')} text={t('ourProjectText')} title={t('ourProjectTitle')} />
                 </div>
                 < div className="Object__cardsBox" >
-                    <Slider {...settings} centerMode centerPadding={'500px'}>
-                        {object && object?.map((e: any) => (
-                            <div className="Object__cardsBox-box">
-                                <div className="Object__cardsBox-imgdiv">
-                                    <img className="Object__cardsBox-img" src={object[0]?.img[0]?.url} alt="" />
-                                </div>
-                                <div className="Object__cardsBox-content">
-                                    <h3 className="Object__cardsBox-country">Узбекистан</h3>
-                                    <h2 className="Object__cardsBox-title">Qibray 240 MW </h2>
-                                    <p className="Object__cardsBox-text">Мы оказали услуги по технике безопасности, включая анализ и определение рисков, разработку плана безопасности, обучение сотрудников и установку системы видеонаблюдения. Результат - обеспечение безопасности объекта и предотвращение возможных угроз. </p>
-                                </div>
+                    {/* <Slider {...settings} centerMode centerPadding="500px"> */}
+                    {object && object?.map((e: any) => (
+                        <div className="Object__cardsBox-box">
+                            <div className="Object__cardsBox-imgdiv">
+                                <img className="Object__cardsBox-img" src={object[0]?.img[0]?.url} alt="" />
                             </div>
-                        ))}
+                            <div className="Object__cardsBox-content">
+                                <h3 className="Object__cardsBox-country">Узбекистан</h3>
+                                <h2 className="Object__cardsBox-title">Qibray 240 MW </h2>
+                                <p className="Object__cardsBox-text">Мы оказали услуги по технике безопасности, включая анализ и определение рисков, разработку плана безопасности, обучение сотрудников и установку системы видеонаблюдения. Результат - обеспечение безопасности объекта и предотвращение возможных угроз. </p>
+                            </div>
+                        </div>
+                    ))}
 
-                    </Slider>
+                    {/* </Slider> */}
                 </ div>
 
                 <div className="container">
