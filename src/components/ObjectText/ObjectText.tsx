@@ -18,22 +18,19 @@ export default function ObjectText({ object }: Props) {
                     <p className='ObjectHeros-text'>которые предоставляемых нами услуг.</p>
                 </div>
             </div>
-            <div className="container">
-                <ul className='ObjectText'>
-                    {object && object?.map((e: any) => (
-                        <li className='ObjectText-item'>
-                            <div className="ObjectText-top">
-                                <div className="ObjectText-left">
-                                    <h3 className='ObjectText-title'>{e?.[`${i18n.language}_title`]}</h3>
-                                    <p className='ObjectText-text'>{e?.[`${i18n.language}_tag`]} </p>
-                                </div>
-                                <img src={img} alt="img" />
-                            </div>
-
-                            <p className='ObjectText-text2'>{e?.[`${i18n.language}_text`]}</p>
-                        </li>
-                    ))}
-                </ul>
+            <div className="container ObjectHeros__boxyy">
+                {object && object?.map((e: any) => (
+                    <div className="Object__cardsBox-box1">
+                        <div className="Object__cardsBox-imgdiv">
+                            <img className="Object__cardsBox-img" src={object[0]?.img[0]?.url} alt="" />
+                        </div>
+                        <div className="Object__cardsBox-content">
+                            <h3 className="Object__cardsBox-country">{e?.[`${i18n.language}_tag`]}</h3>
+                            <h2 className="Object__cardsBox-title">{e?.[`${i18n.language}_title`]} </h2>
+                            <p className="Object__cardsBox-text">{e?.[`${i18n.language}_text`]}</p>
+                        </div>
+                    </div>
+                ))}
             </div >
         </>
     )

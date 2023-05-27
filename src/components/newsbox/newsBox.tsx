@@ -13,7 +13,7 @@ export const NewsBox = ({ id, title, text, img }: Props) => {
         <div className="NewsBox" onClick={() => navgate(routes.NEWS + `/${id}`)}>
             <div className="NewsBox-top">
                 <h2 className="NewsBox-title">{title}</h2>
-                <p className="NewsBox-text">{text}</p>
+                <p className="NewsBox-text">{text.slice(0, 100)}</p>
                 <div className="NewsBox-btnimg">
                     <img className="NewsBox-img2" src={icon} alt="icon" />
                 </div>

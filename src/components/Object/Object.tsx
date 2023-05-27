@@ -24,7 +24,7 @@ export default function Objects({ object }: Props) {
     };
     const widthwindow = useGetWindowWidth()
 
-
+    console.log(object)
     return (
         <>
             <div className="Object">
@@ -39,9 +39,9 @@ export default function Objects({ object }: Props) {
                                 <img className="Object__cardsBox-img" src={object[0]?.img[0]?.url} alt="" />
                             </div>
                             <div className="Object__cardsBox-content">
-                                <h3 className="Object__cardsBox-country">Узбекистан</h3>
-                                <h2 className="Object__cardsBox-title">Qibray 240 MW </h2>
-                                <p className="Object__cardsBox-text">Мы оказали услуги по технике безопасности, включая анализ и определение рисков, разработку плана безопасности, обучение сотрудников и установку системы видеонаблюдения. Результат - обеспечение безопасности объекта и предотвращение возможных угроз. </p>
+                                <h3 className="Object__cardsBox-country">{e?.[`${i18n.language}_tag`]}</h3>
+                                <h2 className="Object__cardsBox-title">{e?.[`${i18n.language}_title`]} </h2>
+                                <p className="Object__cardsBox-text">{e?.[`${i18n.language}_text`]}</p>
                             </div>
                         </div>
                     ))}

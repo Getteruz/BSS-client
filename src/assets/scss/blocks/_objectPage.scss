@@ -147,6 +147,20 @@
             margin-bottom: 88px;
         }
 
+        &-box1 {
+            width: 1200px !important;
+            display: flex !important;
+            align-items: center;
+            gap: 50px;
+            background: #FFFFFF;
+            margin-bottom: 10px;
+            box-shadow: 2px 3px 3px 2px rgb(0, 0, 0, 0.1);
+
+            &:last-child {
+                margin-bottom: 100px;
+            }
+        }
+
         &-country {
             font-family: 'Inter';
             font-style: normal;
