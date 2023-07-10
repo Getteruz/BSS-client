@@ -8,21 +8,24 @@ import NewsText from "../../components/newsText/newsText"
 
 
 import ObjectsNews from "../../components/objectNews/ObjectNews"
+import ObejctOnehero from "../../components/ObjectoneHero/newsHore"
+import ObjectOneText from "../../components/ObjectTextOne/newsText"
 import Partners from "../../components/partners/partners"
 import { GetNewsbyid } from "../../shared/api/news"
+import { GetObjectsbyid } from "../../shared/api/object"
 interface Props {
     object: any,
 
 }
 
-export default function NewsPage({ object }: Props) {
+export default function ObjectOnePage({ object }: Props) {
 
     const [data, setData] = useState<any>()
     const params = useParams()
 
     useEffect(() => {
         const fetchNews = async () => {
-            const data = await GetNewsbyid(params?.id);
+            const data = await GetObjectsbyid(params?.id);
 
             setData(data)
         }
@@ -35,8 +38,8 @@ export default function NewsPage({ object }: Props) {
     return (
         <>
             <Header />
-            <Newshero data={data} />
-            <NewsText data={data} />
+            <ObejctOnehero data={data} />
+            <ObjectOneText data={data} />
             <Partners />
             <Footer />
         </>

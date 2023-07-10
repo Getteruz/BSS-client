@@ -5,8 +5,9 @@ interface Props {
 
 }
 
-export default function NewsText({ data }: Props) {
+export default function ObjectOneText({ data }: Props) {
     const { i18n } = useTranslation()
+    console.log(data)
     return (
         <div className="newsText">
             <div className="container">
@@ -20,13 +21,7 @@ export default function NewsText({ data }: Props) {
                     </p>
                 </div>
 
-                <div className="newsText-tags">
-                    <h3 className="newsText-tags-title">Новости</h3>
-                    <h2 className="newsText-tags-title2">Теги по тематике</h2>
-                    <div className="newsText-tags-div">
-                        <p>{data && data[`${i18n.language}_tag`]}</p>
-                    </div>
-                </div>
+
             </div>
         </div >
     )

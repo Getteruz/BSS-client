@@ -37,21 +37,21 @@ export const Header = () => {
     return (
         <>
             <header className="header"
-                style={(scrollPosition < 629 && router.pathname == '/') ? { "background": "transparent" } : { "background": "white" }}
+                style={(scrollPosition < 10 && router.pathname == '/') ? { "background": "transparent" } : { "background": "white" }}
             >
                 <div className="container_header">
-                    <Link to={routes.HOME}>  {scrollPosition < 629 && router.pathname == '/' ? <Logo fill={'#ffffff'} fill2={'#ffffff'} /> : <Logo fill={'#3B42C5'} fill2={'#57C5B6'} />}</Link>
+                    <Link to={routes.HOME}>  {scrollPosition < 10 && router.pathname == '/' ? <Logo fill={'#ffffff'} fill2={'#ffffff'} /> : <Logo fill={'#3B42C5'} fill2={'#57C5B6'} />}</Link>
                     {widthwindow > 1145 ? <>
-                        {scrollPosition < 629 && router.pathname == '/' ? <Sidebar color={'white'} /> : <Sidebar color={'none'} />}
+                        {scrollPosition < 10 && router.pathname == '/' ? <Sidebar color={'white'} /> : <Sidebar color={'none'} />}
 
-                    </> : widthwindow > 500 ? <p className={`header-munutext ${color}`} style={(scrollPosition < 629 && router.pathname == '/') ? { color: "white" } : { color: "black" }}>MENU</p> : ""}
+                    </> : widthwindow > 500 ? <p className={`header-munutext ${color}`} style={(scrollPosition < 10 && router.pathname == '/') ? { color: "white" } : { color: "black" }}>MENU</p> : ""}
 
                     <div className={'header_languagewrap'}>
-                        <LanguageIcon fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "black"} />
+                        <LanguageIcon fill={scrollPosition < 10 && router.pathname == '/' ? "white" : "black"} />
                         <p
 
                             className="header_language"
-                            style={(scrollPosition < 629 && router.pathname == '/') ? { color: "white" } : { color: "black" }}
+                            style={(scrollPosition < 10 && router.pathname == '/') ? { color: "white" } : { color: "black" }}
                         >  {widthwindow > 684 ? <>  {t('lang')}</> : <>Ру</>}
                             <ul className="wrapLaga">
                                 <li onClick={() => i18n.changeLanguage('uz')}>O'zbekcha</li>
@@ -66,18 +66,18 @@ export const Header = () => {
 
                             className="btn"
                             onClick={() => x.current.style.display = "block"}
-                            style={(scrollPosition < 629 && router.pathname == '/') ? { background: "white", color: "#3B42C5" } : { background: "#3B42C5", color: "white" }}
+                            style={(scrollPosition < 10 && router.pathname == '/') ? { background: "white", color: "#3B42C5" } : { background: "#3B42C5", color: "white" }}
                         >{t('request')}</button>
                         <div className="header_icons">
-                            <Linkedin fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "#3910CE"} />
-                            <Twitter fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "#3910CE"} />
-                            <Facebook fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "#3910CE"} />
-                            <Instagram fill={scrollPosition < 629 && router.pathname == '/' ? "white" : "#3910CE"} />
+                            <Linkedin fill={scrollPosition < 10 && router.pathname == '/' ? "white" : "#3910CE"} />
+                            <Twitter fill={scrollPosition < 10 && router.pathname == '/' ? "white" : "#3910CE"} />
+                            <Facebook fill={scrollPosition < 10 && router.pathname == '/' ? "white" : "#3910CE"} />
+                            <Instagram fill={scrollPosition < 10 && router.pathname == '/' ? "white" : "#3910CE"} />
 
                         </div>
                     </> : <div>
-                        <div className='header_burger' style={(scrollPosition < 629 && router.pathname == '/') ? { background: "white" } : { background: "black" }}></div>
-                        <div className='header_burger' style={(scrollPosition < 629 && router.pathname == '/') ? { background: "white" } : { background: "black" }}></div>
+                        <div className='header_burger' style={(scrollPosition < 10 && router.pathname == '/') ? { background: "white" } : { background: "black" }}></div>
+                        <div className='header_burger' style={(scrollPosition < 10 && router.pathname == '/') ? { background: "white" } : { background: "black" }}></div>
                     </div>
                     }
                 </div>

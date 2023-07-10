@@ -19,9 +19,7 @@
     "serviceHaelty":"health",
     "serviceText1":"As a fully integrated professional services and project management company with offices around the world, we operate in accordance with our four core values: Safety, Integrity, Collaboration and Innovation. We are collectively committed to protecting our employees, stakeholders and the environment from harm.",
     "Accredited":"Accredited",
-
     "AccreditedText":"Our company is the first and only delivery partner of the British Safety Council since 2015 in Turkey. audit and consulting services.",
-   
     "AccreditedText2":"Our company is the first and only delivery partner of the British Safety Council since 2015 in Turkey. audit and consulting services.",
     "newsSpan":"News",
     "newsTitle":"Last news",
@@ -34,15 +32,18 @@
     "aboutUs":"About Us",
     "help":"Help",
     "outService":"Our services",
-    "outServiceTitle":"Services we offer!",
-    "outServiceText":"which are the services we provide.",
+    "outServiceTitle":"Services we offer",
+    "outServiceText":"Services we provide",
     "lititleAbout":"A little about our companies",
     "name":"Name",
     "lastname":"Last name",
     "ourContact":"Out Contact контакты",
     "ourAddress":"Out  Address:",
     "number":"Number",
-    "mail":"E-mail",
     "interist":"Interested in cooperation with us?",
-    "call":"Call us"
+    "call":"Call us",
+    "readUs":"Read all about our latest projects, events and company announcements",
+    "allNews":"All news",
+    "companyDirector":"Company director",
+    "aboutDirector":"director well done"
 }

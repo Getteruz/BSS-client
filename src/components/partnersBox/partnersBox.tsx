@@ -8,9 +8,9 @@ interface Props {
 export default function PartnersBox({ img, title, text }: Props) {
     return (
         <div className="PartnersBox">
-            <div className="PartnersBox-img"></div>
-            <h4 className="PartnersBox-title">СЩьзфтг тфьу</h4>
-            <p className="PartnersBox-text">Узбекистан</p>
+            <div className="PartnersBox-img"><img src={img} alt="" /></div>
+            <h4 className="PartnersBox-title">{title}</h4>
+            <p className="PartnersBox-text">{text}</p>
         </div>
     )
 }

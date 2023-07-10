@@ -24,11 +24,11 @@
     text-align: center;
 
     &-img {
-        background: #F2F4F7;
         width: 104px;
         height: 104px;
         border-radius: 50%;
         margin: 0 auto;
+        object-fit: cover;
     }
 
     &-title {

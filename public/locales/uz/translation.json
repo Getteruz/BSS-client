@@ -31,16 +31,24 @@
     "allSave":"© 2023 Barcha huquqlar himoyalangan.",
     "aboutUs":"Biz haqimizda",
     "help":"Yordam",
-    "outService":"Наше услуги",
-    "outServiceTitle":"Услуги, которые мы предлагаем!",
-    "outServiceText":"которые предоставляемых нами услуг.",
-    "lititleAbout":"Немного о наших компании",
-    "name":"Имя",
-    "lastname":"Номер телефона",
-    "ourContact":"Наше контакты",
-    "ourAddress":"Наш адресс:",
-    "number":"Номер",
-    "mail":"E-mail",
-    "interist":"Заинтересованы в сотрудничестве с нами?",
-    "call":"Позвоните"
+    "outService":"Bizning xizmatlarimiz",
+    "outServiceTitle":"Biz taklif qiladigan xizmatlar!",
+    "outServiceText":"Biz taqdim etayotgan xizmatlar",
+    "lititleAbout":"Bizning kompaniyamiz haqida bir oz",
+    "name":"Ism",
+    "lastname":"Telefon raqami",
+    "ourContact":"Bizning kontaktlarimiz",
+    "ourAddress":"Bizning manzil:",
+    "number":"Raqam",
+    "interist":"Biz bilan hamkorlik qilishga qiziqasizmi?",
+    "call":"Qo'ng'iroq qiling",
+    "readUs":"Bizning so'nggi loyihalarimiz, tadbirlarimiz va kompaniya e'lonlarimiz haqida o'qing",
+    "allNews":"Barcha yangiliklar",
+    "companyDirector":"Kompaniya direktori",
+    "aboutDirector":"juda qoyil"
+
+
+
+
+
 }

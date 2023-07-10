@@ -19,9 +19,7 @@
     "serviceHaelty":"Sağlık",
     "serviceText1":"Dünyanın dört bir yanında ofisleri bulunan tam entegre bir profesyonel hizmetler ve proje yönetimi şirketi olarak, dört temel değerimize uygun olarak faaliyet gösteriyoruz: Güvenlik, Dürüstlük, İşbirliği ve Yenilik. Çalışanlarımızı, paydaşlarımızı ve çevreyi zarar görmekten korumaya toplu olarak kararlıyız.",
     "Accredited":"Akredite",
-  
     "AccreditedText":"Şirketimiz 2015 yılından beri British Safety Council'in Türkiye'deki ilk ve tek teslimat ortağıdır. denetim ve danışmanlık hizmetleri.",
-  
     "AccreditedText2":"Şirketimiz 2015 yılından beri British Safety Council'in Türkiye'deki ilk ve tek teslimat ortağıdır. denetim ve danışmanlık hizmetleri..",
     "newsSpan":"Haberler",
     "newsTitle":"Son haberler",
@@ -34,15 +32,22 @@
     "aboutUs":"Hakkımızda",
     "help":"Yardım",
     "outService":"Hyzmatlarymyz",
-    "outServiceTitle":"Услуги, которые мы предлагаем!",
-    "outServiceText":"которые предоставляемых нами услуг.",
-    "lititleAbout":"Немного о наших компании",
-    "name":"Имя",
-    "lastname":"Номер телефона",
-    "ourContact":"Наше контакты",
-    "ourAddress":"Наш адресс:",
-    "number":"Номер",
-    "mail":"E-mail",
+    "outServiceTitle":"Sunduğumuz hizmetler!",
+    "outServiceText":"Hangi hizmetleri veriyoruz",
+    "lititleAbout":"Verdiğimiz hizmetler",
+    "name":"İsim",
+    "lastname":"Telefon numarası",
+    "ourContact":"Bağlantılarımız",
+    "ourAddress":"Bizim adresimiz:",
+    "number":"Sayı",
     "interist":"Biz bilen hyzmatdaşlyga gyzyklanýarsyňyzmy?",
-    "call":"jaň ediň"
+    "call":"jaň ediň",
+    "readUs":"En son projelerimiz, etkinliklerimiz ve şirket duyurularımız hakkında her şeyi okuyun",
+    "allNews":"Bütün haberler",
+    "companyDirector":"Şirket yöneticisi",
+    "aboutDirector":"aferin yönetmen"
+
+
+
+
 }

@@ -8,7 +8,6 @@ interface Props {
 
 }
 export default function ObjectPage({ news }: Props) {
-
     return (
         <>
             <Header />

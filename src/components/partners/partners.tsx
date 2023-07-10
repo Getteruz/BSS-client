@@ -12,11 +12,11 @@ export default function Partners() {
             </div>
 
             <div className="Partners-Wrap">
-                <PartnersBox img={""} title={"СЩьзфтг тфьу"} text={"Узбекистан"} />
-                <PartnersBox img={""} title={"СЩьзфтг тфьу"} text={"Узбекистан"} />
-                <PartnersBox img={""} title={"СЩьзфтг тфьу"} text={"Узбекистан"} />
-                <PartnersBox img={""} title={"СЩьзфтг тфьу"} text={"Узбекистан"} />
-                <PartnersBox img={""} title={"СЩьзфтг тфьу"} text={"Узбекистан"} />
+                <PartnersBox img={"https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg"} title={"Polaris Creative Backline"} text={"Узбекистан"} />
+                <PartnersBox img={"https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg"} title={"Polaris Creative Backline"} text={"Узбекистан"} />
+                <PartnersBox img={"https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg"} title={"Polaris Creative Backline"} text={"Узбекистан"} />
+                <PartnersBox img={"https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg"} title={"Polaris Creative Backline"} text={"Узбекистан"} />
+                <PartnersBox img={"https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg"} title={"Polaris Creative Backline"} text={"Узбекистан"} />
             </div>
 
         </div>

@@ -1,10 +1,13 @@
 import React from 'react'
 import img from "../../assets/images/Rectangleds7.png"
 import memebr from "../../assets/images/Ellipse1394.png"
+import { useTranslation } from 'react-i18next';
 interface Props {
     data: any;
 }
 export default function Team({ data }: Props) {
+    const { i18n } = useTranslation()
+    const { t } = useTranslation()
     return (
         <div className='Team'>
             <div className='Team-img'>
@@ -18,7 +21,7 @@ export default function Team({ data }: Props) {
                         <div>
                             <h4 className='Team_member-name'>Abdullo Xolmurodov</h4>
                             <p className='Team_member-text'>Директор компании</p>
-                            <p className='Team_member-dicr'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            <p className='Team_member-dicr'>{t("aboutDirector")}</p>
                         </div>
                     </li>
                 </ul>

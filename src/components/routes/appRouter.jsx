@@ -14,6 +14,9 @@ import { GetAboutUs } from "../../shared/api/aboutUs";
 import { GetService } from "../../shared/api/service";
 import { GetObjects } from "../../shared/api/object";
 import { GetNews } from "../../shared/api/news";
+import ServicePage from "../../app/Service/Service";
+import ObjectOnePage from "../../app/ObjectOne/News";
+
 
 
 
@@ -61,11 +64,14 @@ export default function AppRouter() {
         console.log("err");
       })
   }, []);
+
   return (
     <Routes>
       <Route path={routes.HOME} element={<Home service={service} news={news} object={object} />} />
       <Route path={routes.SERVICES} element={<Services service={service} aboutus={aboutus} />} />
+      <Route path={routes.SERVICES + '/:id'} element={<ServicePage object={object} />} />
       <Route path={routes.OBJECT} element={<Object object={object} aboutus={aboutus} />} />
+      <Route path={routes.OBJECT + '/:id'} element={<ObjectOnePage object={object} />} />
       <Route path={routes.NEWS} element={<ObjectPage news={news} />} />
       <Route path={routes.NEWS + '/:id'} element={<NewsPage object={object} />} />
       <Route path={routes.CONTACT} element={<Contacts />} />

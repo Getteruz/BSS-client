@@ -16,7 +16,7 @@ export default function ObjectsCard({ data }: Props) {
                 <div className="object_cardtop">
                     <div className="container">
                         <NewsBox id={data[0]?._id} title={data[0]?.[`${i18n.language}_title`]} text={data[0]?.[`${i18n.language}_text`]} img={data[0]?.img[0]?.url} />
-                        {widthwindow > 1170 ? <NewsBox id={data[0]?._id} title={data[0]?.[`${i18n.language}_title`]} text={data[0]?.[`${i18n.language}_text`]} img={data[0]?.img[0]?.url} /> : ""}
+                        {widthwindow > 1170 ? <NewsBox id={data[1]?._id} title={data[1]?.[`${i18n.language}_title`]} text={data[1]?.[`${i18n.language}_text`]} img={data[1]?.img[0]?.url} /> : ""}
                     </div>
                 </div>
                 : ""}

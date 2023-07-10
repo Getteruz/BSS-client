@@ -6,6 +6,8 @@ import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import { useGetWindowWidth } from "../../shared/hooks/useGetWindowWith";
+import { useNavigate } from "react-router-dom";
+import routes from "../../shared/constants/routes";
 interface Props {
     object: any,
 }
@@ -24,7 +26,7 @@ export default function Objects({ object }: Props) {
     };
     const widthwindow = useGetWindowWidth()
 
-    console.log(object)
+    const navigate = useNavigate()
     return (
         <>
             <div className="Object">
@@ -34,9 +36,9 @@ export default function Objects({ object }: Props) {
                 < div className="Object__cardsBox" >
                     {/* <Slider {...settings} centerMode centerPadding="500px"> */}
                     {object && object?.map((e: any) => (
-                        <div className="Object__cardsBox-box">
+                        <div className="Object__cardsBox-box" onClick={() => navigate(routes.OBJECT + `/${e?._id}`)}>
                             <div className="Object__cardsBox-imgdiv">
-                                <img className="Object__cardsBox-img" src={object[0]?.img[0]?.url} alt="" />
+                                <img className="Object__cardsBox-img" src={e?.img[0]?.url} alt="" />
                             </div>
                             <div className="Object__cardsBox-content">
                                 <h3 className="Object__cardsBox-country">{e?.[`${i18n.language}_tag`]}</h3>

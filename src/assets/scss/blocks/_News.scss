@@ -14,6 +14,7 @@
     &_leftdiv {
         display: flex;
         align-content: center;
+        flex-wrap: wrap;
 
         @media only screen and (max-width:800px) {
             overflow: scroll;
@@ -66,6 +67,12 @@
         }
     }
 
+
+}
+
+.newsText__img {
+    height: 520px !important;
+    object-fit: cover;
 }
 
 .NewsBox {
@@ -76,7 +83,9 @@
     border: 1px solid rgba(23, 26, 74, 0.1);
     margin-bottom: 5px;
     cursor: pointer;
-
+    @media only screen and (max-width:500px) {
+        margin-bottom: 30px;
+    }
 
 
     &-img2 {
@@ -96,6 +105,9 @@
 
     &-top {
         padding: 49px 18px 22px 39px;
+        @media only screen and (max-width:500px) {
+            padding: 29px 18px 22px 29px;
+        }
     }
 
     &-title {

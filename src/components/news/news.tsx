@@ -14,6 +14,7 @@ export const News = ({ news }: Props) => {
     const { i18n } = useTranslation()
     const { t } = useTranslation()
     const x = useRef<any>()
+    // console.log(news)
     return (
         <div className="News">
             <div className="container">
@@ -22,7 +23,7 @@ export const News = ({ news }: Props) => {
                     <Link to={routes.NEWS} className="News_left-btn">{t('newsBtn')}</Link>
                 </div>
                 <div className='News_leftdiv'>
-                    {news && news?.map((e: any) => (
+                    {news && news?.slice(0, 2)?.map((e: any) => (
                         <NewsBox id={e?._id} key={e?._id} title={e?.[`${i18n.language}_title`]} text={e?.[`${i18n.language}_text`]} img={e?.img[0]?.url} />
                     ))}
 
